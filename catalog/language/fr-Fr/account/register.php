@@ -8,8 +8,8 @@ $_['heading_title']        = 'Créer un compte';
 // Text
 
 $_['text_account']         = 'Compte';
-$_['text_register']        = 'registre';
-$_['text_account_already'] = 'Si vous avez déjà un compte chez nous, connectez-vous au <a href="%s"> page de connexion </a> .';
+$_['text_register']        = 'Enregistrez-vous';
+$_['text_account_already'] = 'Si vous avez déjà un compte chez nous, connectez-vous à la <a href="%s"> page de connexion </a> .';
 $_['text_your_details']    = 'Vos informations personnelles';
 $_['text_your_address']    = 'Votre adresse';
 $_['text_newsletter']      = 'Bulletin';
