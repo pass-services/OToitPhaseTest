@@ -12,7 +12,7 @@ $_['text_register']        = 'Enregistrez-vous';
 $_['text_account_already'] = 'Si vous avez déjà un compte chez nous, connectez-vous à la <a href="%s"> page de connexion </a> .';
 $_['text_your_details']    = 'Vos informations personnelles';
 $_['text_your_address']    = 'Votre adresse';
-$_['text_newsletter']      = 'Bulletin';
+$_['text_newsletter']      = 'Lettre d`informations';
 $_['text_your_password']   = 'Votre mot de passe';
 $_['text_agree']           = 'j`ai lu et accepté les <a href="%s" class="agree">  <b> %s </b>  </a> 
 ';
