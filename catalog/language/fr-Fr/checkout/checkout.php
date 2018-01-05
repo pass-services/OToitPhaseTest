@@ -2,13 +2,13 @@
 
 // Heading
 
-$_['heading_title']                  = 'Check-out';
+$_['heading_title']                  = 'Acheter';
 
 
 // Text
 
 $_['text_cart']                      = 'Chariot';
-$_['text_checkout_option']           = 'Étape %s: Check-out Options';
+$_['text_checkout_option']           = 'Étape %s: Options d`achat';
 $_['text_checkout_account']          = 'Étape %s: Compte &amp; Facturation Détails';
 $_['text_checkout_payment_address']  = 'Étape %s: Facturation Détails';
 $_['text_checkout_shipping_address'] = 'Étape %s: Livraison Détails';
@@ -21,7 +21,7 @@ $_['text_returning_customer']        = 'Déjà client';
 $_['text_checkout']                  = 'Options de paiement:';
 $_['text_i_am_returning_customer']   = 'Je suis un client de retour';
 $_['text_register']                  = 'Créer un compte';
-$_['text_guest']                     = 'Invité Checkout';
+$_['text_guest']                     = 'Acheter sans compte client';
 $_['text_register_account']          = 'En créant un compte, vous pourrez faire des achats plus rapidement, être à jour sur l`état d`une commande, et garder une trace des commandes que vous avez faites précédemment.';
 $_['text_forgotten']                 = 'mot de passe oublié';
 $_['text_your_details']              = 'Vos informations personnelles';
