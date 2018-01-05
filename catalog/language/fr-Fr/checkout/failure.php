@@ -8,7 +8,7 @@ $_['heading_title'] = 'Échec du paiement!';
 // Text
 
 $_['text_basket']   = 'Chariot';
-$_['text_checkout'] = 'Check-out';
+$_['text_checkout'] = 'Acheter';
 $_['text_failure']  = 'Échec du paiement';
 $_['text_message']  = ' <p> Un problème est survenu lors du traitement de votre paiement et la commande n`a pas abouti. </p> 
 ';
@@ -18,19 +18,19 @@ $_['text_message']  = ' <p> Un problème est survenu lors du traitement de votre
 
 <ul>
 
-  <li>Insufficient funds</li>
+  <li>Fonds insuffisant</li>
 
-  <li>Verification failed</li>
+  <li>Echec de la vérification</li>
 
 </ul>
 
 
 
-<p>Please try to order again using a different payment method.</p>
+<p>Veuillez essayer à nouveau en utilisant une méthode de paiement différente.</p>
 
 
 
-<p>If the problem persists please <a href="%s">contact us</a> with the details of the order you are trying to place.</p>
+<p>Si le problème persiste, veuillez <a href="%s">nous contacter</a> avec les détails de la commande que vous souhaitez passer.</p>
 
 ';
 
