@@ -94,9 +94,9 @@ $_['error_confirm']                  = 'La confirmation du mot de passe ne corre
 $_['error_address_1']                = 'L`adresse 1 doit comporter entre 3 et 128 caractères!';
 $_['error_city']                     = 'La ville doit avoir entre 2 et 128 caractères!';
 $_['error_postcode']                 = 'Le code postal doit comporter entre 2 et 10 caractères!';
-$_['error_country']                  = 'S`il vous plaît sélectionner un pays!';
-$_['error_zone']                     = 'S`il vous plaît sélectionner une région / état!';
-$_['error_agree']                    = 'Attention: Toi doit se mettre d`accord à la %s!';
+$_['error_country']                  = 'Veuillez sélectionner un pays!';
+$_['error_zone']                     = 'Veuillez sélectionner une région / état!';
+$_['error_agree']                    = 'Attention: Vous devez accepter la %s!';
 $_['error_address']                  = 'Attention: Vous devez sélectionner l`adresse!';
 $_['error_shipping']                 = 'Attention: méthode d`expédition requise!';
 $_['error_no_shipping']              = 'Attention: Aucune option d`expédition disponible. S`il vous plaît.  <a href="%s"> Contactez nous </a> à l`aide!';
