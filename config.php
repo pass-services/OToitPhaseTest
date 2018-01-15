@@ -26,3 +26,9 @@ define('DB_PASSWORD', 'oTo1tdela');
 define('DB_DATABASE', 'OToit');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'otoit_');
+
+// Cache
+define('CACHE_DRIVER', 'mem'); // 'file', 'apc', 'mem' or 'memcached'
+define('CACHE_HOSTNAME', 'localhost');
+define('CACHE_PORT', '11211');
+define('CACHE_PREFIX', 'oc_');
