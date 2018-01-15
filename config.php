@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://o-toit.fr/');
+define('HTTP_SERVER', 'http://www.o-toit.fr/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://o-toit.fr/');
+define('HTTPS_SERVER', 'http://www.o-toit.fr/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/catalog/');
