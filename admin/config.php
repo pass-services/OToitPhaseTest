@@ -4,8 +4,8 @@ define('HTTP_SERVER', 'http://www.o-toit.fr/admin/');
 define('HTTP_CATALOG', 'http://www.o-toit.fr/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://www.o-toit.fr/admin/');
-define('HTTPS_CATALOG', 'http://www.o-toit.fr/');
+define('HTTPS_SERVER', 'https://www.o-toit.fr/admin/');
+define('HTTPS_CATALOG', 'https://www.o-toit.fr/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/admin/');
