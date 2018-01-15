@@ -1,11 +1,11 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://vps430871.ovh.net/admin/');
-define('HTTP_CATALOG', 'http://vps430871.ovh.net/');
+define('HTTP_SERVER', 'http://www.o-toit.fr/admin/');
+define('HTTP_CATALOG', 'http://www.o-toit.fr/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://vps430871.ovh.net/admin/');
-define('HTTPS_CATALOG', 'http://vps430871.ovh.net/');
+define('HTTPS_SERVER', 'http://www.o-toit.fr/admin/');
+define('HTTPS_CATALOG', 'http://www.o-toit.fr/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/admin/');
