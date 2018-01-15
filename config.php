@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://vps430871.ovh.net/');
+define('HTTP_SERVER', 'http://o-toit.fr/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://vps430871.ovh.net/');
+define('HTTPS_SERVER', 'http://o-toit.fr/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/html/catalog/');
