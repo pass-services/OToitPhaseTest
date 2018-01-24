@@ -2,7 +2,7 @@
 
 // Text
 
-$_['text_search'] = 'Chercher';
+$_['text_search'] = 'Rechercher';
 
 
 

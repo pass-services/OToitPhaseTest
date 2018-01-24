@@ -2,10 +2,10 @@
 
 // Text
 
-$_['text_subject']	= '%s - Produit La revue';
-$_['text_waiting']	= 'Vous avez une nouvelle revue de produit en attente.';
+$_['text_subject']	= '%s - Avis Produit';
+$_['text_waiting']	= 'Vous avez un nouvel avis produit en attente.';
 $_['text_product']	= 'Produit: %s';
-$_['text_reviewer']	= 'Critique: %s';
+$_['text_reviewer']	= 'Avis: %s';
 $_['text_rating']	= 'Évaluation: %s';
 $_['text_review']	= 'Texte de révision:';
 

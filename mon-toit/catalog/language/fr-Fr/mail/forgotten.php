@@ -2,10 +2,10 @@
 
 // Text
 
-$_['text_subject']  = '%s - Mot de passe réinitialiser demande';
-$_['text_greeting'] = 'UNE Nouveau mot de passe était demandé pour %s client Compte.';
-$_['text_change']   = 'Pour réinitialiser votre mot de passe, cliquez sur le lien ci-dessous:';
-$_['text_ip']       = 'le IP utilisé à faire ce demande était: %s';
+$_['text_subject']  = '%s - Demande de réinitialisation de Mot de passe';
+$_['text_greeting'] = 'Un nouveau mot de passe a été demandé pour %s client Compte.';
+$_['text_change']   = 'Pour réinitialiser votre mot de passe, veuillez cliquer sur le lien ci-dessous:';
+$_['text_ip']       = 'l`adresse IP utilisée pour effectuer cette demande était: %s';
 
 
 
