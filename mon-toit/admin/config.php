@@ -1,7 +1,7 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://o-toit.fr/admin/');
-define('HTTP_CATALOG', 'http://o-toit.fr/');
+define('HTTP_SERVER', 'https://o-toit.fr/admin/');
+define('HTTP_CATALOG', 'https://o-toit.fr/');
 
 // HTTPS
 define('HTTPS_SERVER', 'https://o-toit.fr/admin/');
