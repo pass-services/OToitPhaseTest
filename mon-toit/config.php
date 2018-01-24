@@ -1,6 +1,6 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://o-toit.fr/mon-toit/');
+define('HTTP_SERVER', 'https://o-toit.fr/mon-toit/');
 
 // HTTPS
 define('HTTPS_SERVER', 'https://o-toit.fr/mon-toit/');
