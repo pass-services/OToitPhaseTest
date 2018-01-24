@@ -21,12 +21,12 @@ define(['./module'], function (module) {
                 require: '?ngModel',
                 link: function ($scope, $element, $attrs, $model) {
                     var ck = CKEDITOR.replace($element[0], {
-                        filebrowserBrowseUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserUploadUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserImageUploadUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token
+                        filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserUploadUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token
                     });
                     function updateModel() {
                         $scope.$apply(function () {

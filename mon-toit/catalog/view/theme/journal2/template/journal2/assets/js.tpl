@@ -20,7 +20,7 @@ Journal.infiniteScrollNoMoreItemsText = '<?php echo str_replace("'","\\'", $this
 Journal.infiniteScrollLoadMoreItemsText = '<?php echo str_replace("'","\\'", $this->journal2->settings->get('infinite_scroll_load_more_items_text', 'Load more')); ?>';
 Journal.infiniteScrollLoadMoreItemsOffset = parseInt('<?php echo str_replace("'","\\'", $this->journal2->settings->get('infinite_scroll_load_more_items_offset', '0')); ?>', 10);
 Journal.hasCountdownEnabled = <?php echo $this->journal2->settings->get('show_countdown', 'never') !== 'never' ? 'true' : 'false'; ?>;
-Journal.hasStickyScroll = <?php echo $this->journal2->settings->get('sticky_header_hide', '1'); ?>;
+
 
 Journal.BASE_HREF = 'url(' + $('base').attr('href') + ')';
 
@@ -44,12 +44,6 @@ if ($('html').hasClass('filter-on-mobile')) {
 }
 
 Journal.productPage();
-
-$(".product-page .rating a").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#tabs").offset().top - 50
-    }, 600);
-});
 
 <?php /* enable sticky header */ ?>
 <?php if (!$this->journal2->html_classes->hasClass('mobile') && (($this->journal2->settings->get('sticky_header', '1') === '1' && Journal2Utils::getDevice() === 'desktop') || ($this->journal2->settings->get('sticky_header_tablet', '1') === '1' && Journal2Utils::getDevice() === 'tablet'))):?>

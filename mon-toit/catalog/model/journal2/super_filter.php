@@ -497,10 +497,6 @@ class ModelJournal2SuperFilter extends Model {
 
         $sql .= " GROUP BY p.product_id";
 
-        if (isset($data['sort']) && $data['sort'] === 'ps.price') {
-        	$data['sort'] = 'p.price';
-		}
-
         $sort_data = array(
             'pd.name',
             'p.model',

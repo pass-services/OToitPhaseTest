@@ -691,10 +691,10 @@ class ControllerModuleJournal2SuperFilter extends Controller {
             $data['tags'][] = $this->request->get['tag'];
         }
 
-        if (isset($this->request->get['full_path'])) {
-            $data['full_path'] = $this->request->get['full_path'];
-        } else if (isset($this->request->get['path'])) {
+        if (isset($this->request->get['path'])) {
             $data['full_path'] = $this->request->get['path'];
+        } else if (isset($this->request->get['full_path'])) {
+            $data['full_path'] = $this->request->get['full_path'];
         } else {
             $data['full_path'] = '';
         }
@@ -818,22 +818,12 @@ class ControllerModuleJournal2SuperFilter extends Controller {
                 }
             }
 
-            if (version_compare(VERSION, '3', '>=')) {
-				$description_limit = $this->config->get('theme_' . $this->config->get('config_theme') . '_product_description_length');
-			} else if (version_compare(VERSION, '2.2', '>=')) {
-				$description_limit = $this->config->get($this->config->get('config_theme') . '_product_description_length');
-			} else if (version_compare(VERSION, '2', '>=')){
-				$description_limit = $this->config->get('config_product_description_length');
-			} else {
-            	$description_limit = 100;
-			}
-
             $this->data['products'][] = array(
                 'product_id'  => $result['product_id'],
                 'thumb'       => $image,
                 'thumb2'      => $image2,
                 'name'        => $result['name'],
-                'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $description_limit) . '..',
+                'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, version_compare(VERSION, '2', '>=') ? (version_compare(VERSION, '2.2', '<') ? $this->config->get('config_product_description_length') : $this->config->get($this->config->get('config_theme') . '_product_description_length')) : 100) . '..',
                 'price'       => $price,
                 'special'     => $special,
                 'date_end'    => $date_end,

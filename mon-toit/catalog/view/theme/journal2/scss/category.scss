@@ -147,7 +147,6 @@ h2.refine {
     overflow: hidden;
     display: flex;
     align-items: center;
-    position: relative;
     b {
       position: relative;
       font-weight: normal;
@@ -495,15 +494,6 @@ PRODUCT LIST
         float: none;
       }
     }
-  }
-}
-
-@media only screen and (max-width: 470px){
-  .product-list-item .image {
-    width: 100%;
-  }
-  .product-list-item .product-details {
-    margin-left: 0;
   }
 }
 

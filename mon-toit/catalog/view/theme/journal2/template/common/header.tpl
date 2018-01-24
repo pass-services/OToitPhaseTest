@@ -20,9 +20,9 @@
 <meta charset="UTF-8" />
 <?php if ($this->journal2->settings->get('responsive_design', '1') === '1'): ?>
 <?php if ($this->journal2->settings->get('pinch_zoom', '1') === '1'): ?>
-<meta name='viewport' content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<?php else: ?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php else: ?>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <?php endif; ?>
 <?php endif; ?>
 <meta name="format-detection" content="telephone=no">
@@ -150,7 +150,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
             require VQMod::modCheck(DIR_TEMPLATE . $this->config->get('config_template') . "/template/journal2/headers/{$header_type}.tpl");
         }
     } else {
-        require modification(DIR_TEMPLATE . $this->config->get('config_template') . "/template/journal2/headers/{$header_type}.tpl");
+        require DIR_TEMPLATE . $this->config->get('config_template') . "/template/journal2/headers/{$header_type}.tpl";
     }
 ?>
 <?php if ($this->journal2->settings->get('config_top_modules')): ?>

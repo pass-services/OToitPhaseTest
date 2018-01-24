@@ -57,10 +57,8 @@
             <?php if ($this->journal2->settings->get('product_page_gallery_carousel')): ?>
             </div>
             </div>
-            <?php if ($this->journal2->settings->get('product_page_gallery_carousel_arrows') != 'never'): ?>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <?php endif; ?>
             </div>
             <?php endif; ?>
           </div>
@@ -71,10 +69,8 @@
                     slidesPerView: parseInt('<?php echo $this->journal2->settings->get('product_page_additional_width', 5) ?>', 10),
                     slidesPerGroup: parseInt('<?php echo $this->journal2->settings->get('product_page_additional_width', 5) ?>', 10),
                     spaceBetween: parseInt('<?php echo $this->journal2->settings->get('product_page_additional_spacing', 10) ?>', 10),
-                    <?php if ($this->journal2->settings->get('product_page_gallery_carousel_arrows') != 'never'): ?>
                     nextButton: $('#product-gallery .swiper-button-next'),
                     prevButton: $('#product-gallery .swiper-button-prev'),
-                    <?php endif; ?>
                     autoplay: <?php echo $this->journal2->settings->get('product_page_gallery_carousel_autoplay') ? (int)$this->journal2->settings->get('product_page_gallery_carousel_transition_delay', 4000) : 'false'; ?>,
                     speed: <?php echo (int)$this->journal2->settings->get('product_page_gallery_carousel_transition_speed', 400); ?>,
                     touchEventsTarget: <?php echo $this->journal2->settings->get('product_page_gallery_carousel_touchdrag')  ? '\'container\'' : 'false'; ?>,

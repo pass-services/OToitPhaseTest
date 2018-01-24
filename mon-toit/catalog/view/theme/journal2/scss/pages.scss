@@ -1553,21 +1553,3 @@ input[name='cc_number'] {
   }
 }
 
-@media only screen and (max-width: 760px){
-  .date > input{
-    min-width:250px;
-  }
-}
-
-.datepicker {
-  color: #222;
-}
-
-.oc3{
-  .contact-page {
-    .panel-body .col-sm-3 {
-      float: left;
-      min-width: 25%;
-    }
-  }
-}

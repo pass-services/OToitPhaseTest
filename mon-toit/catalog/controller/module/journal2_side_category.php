@@ -88,7 +88,13 @@ class ControllerModuleJournal2SideCategory extends Controller {
                     break;
             }
 
-            $this->data['heading_title'] = Journal2Utils::getProperty($module_data, 'module_data.title.value.' . $this->config->get('config_language_id'), 'Categories');
+            if (version_compare(VERSION, '2.3', '<')) {
+                $this->load->language('module/category');
+            } else {
+                $this->load->language('extension/module/category');
+            }
+
+            $this->data['heading_title'] = Journal2Utils::getProperty($module_data, 'module_data.title.value.' . $this->config->get('config_language_id'), $this->language->get('heading_title'));
 
             $tree = array();
 

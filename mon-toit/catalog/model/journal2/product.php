@@ -68,31 +68,29 @@ class ModelJournal2Product extends Model {
 
         $product = $this->model_catalog_product->getProduct($product_id);
 
-		if ($product) {
-			/* get special label */
-			if ($this->journal2->settings->get('label_special_status', 'always') !== 'never') {
-				if ((float)$product['special']) {
-					if ($this->journal2->settings->get('label_special_type', 'percent') === 'percent') {
-						if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
-							$price = $this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax'));
-						} else {
-							$price = false;
-						}
-						$special = $this->tax->calculate($product['special'], $product['tax_class_id'], $this->config->get('config_tax'));
-						if ($price > 0.0) {
-							$this->addLabel($product_id, 'sale', '-' . round(($price - $special) / $price * 100) . '%');
-						}
-					} else {
-						$this->addLabel($product_id, 'sale', $this->journal2->settings->get('label_special_text', 'Sale'));
-					}
-				}
-			}
+        /* get special label */
+        if ($this->journal2->settings->get('label_special_status', 'always') !== 'never') {
+            if ((float)$product['special']) {
+                if ($this->journal2->settings->get('label_special_type', 'percent') === 'percent') {
+                    if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+                        $price = $this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax'));
+                    } else {
+                        $price = false;
+                    }
+                    $special = $this->tax->calculate($product['special'], $product['tax_class_id'], $this->config->get('config_tax'));
+                    if ($price > 0.0) {
+                        $this->addLabel($product_id, 'sale', '-' . round(($price - $special) / $price * 100) . '%');
+                    }
+                } else {
+                    $this->addLabel($product_id, 'sale', $this->journal2->settings->get('label_special_text', 'Sale'));
+                }
+            }
+        }
 
-			/* get stock label */
-			if ($product['quantity'] <= 0 && Journal2Utils::canGenerateImages()) {
-				$this->addLabel($product_id, 'outofstock', $product['stock_status']);
-			}
-		}
+        /* get stock label */
+        if ($product['quantity'] <= 0 && Journal2Utils::canGenerateImages()) {
+            $this->addLabel($product_id, 'outofstock', $product['stock_status']);
+        }
 
         if (!isset(self::$cache[$product_id])) {
             return array();

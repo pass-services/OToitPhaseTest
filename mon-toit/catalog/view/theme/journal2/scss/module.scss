@@ -421,13 +421,6 @@ html[dir="rtl"] {
   }
 }
 
-.arrows-top {
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 30px;
-  }
-}
-
 /******************************
 FULLSCREEN SLIDER
 *******************************/
@@ -869,6 +862,7 @@ CMS BLOCKS
   }
   img {
     max-width: 100% !important;
+    height: auto !important;
   }
   video{
     max-width: 100%;
@@ -898,6 +892,7 @@ CMS BLOCKS
 p {
   img {
     max-width: 100% !important;
+    height: auto !important;
   }
 }
 
@@ -1422,13 +1417,6 @@ ADVANCED GRID
 
 .multi-modules-wrapper {
   overflow: hidden;
-  .tp-caption.fullscreenvideo{
-    height:100% !important;
-    video{
-      width:auto;
-      background: transparent;
-    }
-  }
 }
 
 .multi-modules-column {
@@ -1438,6 +1426,14 @@ ADVANCED GRID
 .multi-modules-row {
   overflow: hidden;
   position: relative;
+}
+
+.tp-caption.fullscreenvideo{
+  height:100% !important;
+  video{
+    width:auto;
+    background: transparent;
+  }
 }
 
 //Revo Overwrites

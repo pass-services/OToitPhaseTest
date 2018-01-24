@@ -1,11 +1,9 @@
 <?php echo $header; ?>
 <div id="container" class="container j-container not-found-page">
   <ul class="breadcrumb">
-    <?php if (isset($breadcrumbs) && is_array($breadcrumbs)): ?>
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo $breadcrumb['href']; ?>" itemprop="url"><span itemprop="title"><?php echo $breadcrumb['text']; ?></span></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
-    <?php endif; ?>
   </ul>
   <div class="row"><?php echo $column_left; ?><?php echo $column_right; ?>
     <?php if ($column_left && $column_right) { ?>

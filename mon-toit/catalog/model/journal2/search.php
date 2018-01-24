@@ -4,7 +4,6 @@ class ModelJournal2Search extends Model {
     public function search($data, $limit = 5, $include_description = false) {
         $params = array(
             'filter_name'         => $data,
-            'filter_tag'          => $data,
             'sort'                => 'p.sort_order',
             'order'               => 'ASC',
             'start'               => 0,

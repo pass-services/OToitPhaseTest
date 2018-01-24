@@ -50,13 +50,7 @@ class ControllerJournal2Checkout extends Controller {
             $this->response->redirect(Journal2Utils::link('checkout/cart'));
             exit;
         }
-
-		if (!$this->customer->isLogged() && $this->config->get('config_customer_price')) {
-			$this->response->redirect(Journal2Utils::link('account/login'));
-			exit;
-		}
-
-		$this->journal2->html_classes->addClass('quick-checkout-page');
+        $this->journal2->html_classes->addClass('quick-checkout-page');
 
         $this->load->language('checkout/checkout');
 
@@ -339,7 +333,7 @@ class ControllerJournal2Checkout extends Controller {
             $order_data['lastname'] = $this->request->post['lastname'];
             $order_data['email'] = $this->request->post['email'];
             $order_data['telephone'] = $this->request->post['telephone'];
-            $order_data['fax'] = isset($this->request->post['fax']) ? $this->request->post['fax'] : '';
+            $order_data['fax'] = $this->request->post['fax'];
             $order_data['custom_field'] = Journal2Utils::getProperty($this->request->post, 'custom_field', array());
             $order_data['payment_firstname'] = $order_data['firstname'];
             $order_data['payment_lastname'] = $order_data['lastname'];
@@ -408,23 +402,13 @@ class ControllerJournal2Checkout extends Controller {
         $sort_order = array();
 
         foreach ($results as $key => $value) {
-            if (version_compare(VERSION, '3', '>=')) {
-				$sort_order[$key] = $this->config->get('total_' . $value['code'] . '_sort_order');
-			} else {
-				$sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
-			}
+            $sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
         }
 
         array_multisort($sort_order, SORT_ASC, $results);
 
         foreach ($results as $result) {
-            if (version_compare(VERSION, '3', '>=')) {
-				$status = $this->config->get('total_' . $result['code'] . '_status');
-			} else {
-				$status = $this->config->get($result['code'] . '_status');
-			}
-
-			if ($status) {
+            if ($this->config->get($result['code'] . '_status')) {
                 if (version_compare(VERSION, '2.3', '<')) {
                     $this->load->model('total/' . $result['code']);
                 } else {
@@ -551,12 +535,12 @@ class ControllerJournal2Checkout extends Controller {
             if ($this->isLoggedIn()) {
                 // save new payment address
                 if ($new_payment_address) {
-                    $this->addAddress($this->getAddressData($new_payment_address, 'payment_'));
+                    $this->model_account_address->addAddress($this->getAddressData($new_payment_address, 'payment_'));
                 }
 
                 // save new shipping address
                 if ($new_shipping_address && $new_shipping_address !== $new_payment_address) {
-                    $this->addAddress($this->getAddressData($new_shipping_address, 'shipping_'));
+                    $this->model_account_address->addAddress($this->getAddressData($new_shipping_address, 'shipping_'));
                 }
 
                 $this->model_journal2_checkout->updateCustomer();
@@ -969,12 +953,12 @@ class ControllerJournal2Checkout extends Controller {
     private function renderCouponVoucherReward() {
         $this->data['text_loading'] = $this->journal2->settings->get('one_page_lang_loading_text', $this->language->get('text_loading'));
 
-        $this->data['coupon_status'] = $this->config->get(version_compare(VERSION, '3', '>=') ? 'total_coupon_status' : 'coupon_status');
+        $this->data['coupon_status'] = $this->config->get('coupon_status');
         $this->data['entry_coupon'] = $this->language->get('entry_coupon');
         $this->data['button_coupon'] = $this->language->get('button_coupon');
         $this->data['coupon'] = Journal2Utils::getProperty($this->session->data, 'coupon');
 
-        $this->data['voucher_status'] = $this->config->get(version_compare(VERSION, '3', '>=') ? 'total_voucher_status' : 'voucher_status');
+        $this->data['voucher_status'] = $this->config->get('voucher_status');
         $this->data['entry_voucher'] = $this->language->get('entry_voucher');
         $this->data['button_voucher'] = $this->language->get('button_voucher');
         $this->data['voucher'] = Journal2Utils::getProperty($this->session->data, 'voucher');
@@ -996,7 +980,7 @@ class ControllerJournal2Checkout extends Controller {
             $this->load->language('extension/total/reward');
         }
 
-        $this->data['reward_status'] = $points && $points_total && $this->config->get(version_compare(VERSION, '3', '>=') ? 'total_reward_status' : 'reward_status');
+        $this->data['reward_status'] = $points && $points_total && $this->config->get('reward_status');
         $this->data['entry_reward'] = $this->language->get('entry_reward');
         $this->data['button_reward'] = $this->language->get('button_reward');
         $this->data['reward'] = Journal2Utils::getProperty($this->session->data, 'reward');
@@ -1086,7 +1070,7 @@ class ControllerJournal2Checkout extends Controller {
             $custom_fields = $this->model_journal2_checkout->getCustomFields();
 
             foreach ($custom_fields as $custom_field) {
-                if (($custom_field['location'] == 'account') && $custom_field['required'] && !($data['custom_field'][$custom_field['custom_field_id']])) {
+                if (($custom_field['location'] == 'account') && $custom_field['required'] && empty($data['custom_field'][$custom_field['custom_field_id']])) {
                     $errors['custom_field' . $custom_field['custom_field_id']] = sprintf($this->language->get('error_custom_field'), $custom_field['name']);
                 }
             }
@@ -1150,7 +1134,7 @@ class ControllerJournal2Checkout extends Controller {
         if (version_compare(VERSION, '2', '>=')) {
             $custom_fields = $this->model_journal2_checkout->getCustomFields();
             foreach ($custom_fields as $custom_field) {
-                if (($custom_field['location'] == 'address') && $custom_field['required'] && !($data[$key . 'custom_field'][$custom_field['custom_field_id']])) {
+                if (($custom_field['location'] == 'address') && $custom_field['required'] && empty($data[$key . 'custom_field'][$custom_field['custom_field_id']])) {
                     $errors[$key . 'custom_field' . $custom_field['custom_field_id']] = sprintf($this->language->get('error_custom_field'), $custom_field['name']);
                 }
             }
@@ -1202,18 +1186,6 @@ class ControllerJournal2Checkout extends Controller {
 
         $customer_id = $this->model_account_customer->addCustomer($data);
 
-        if (version_compare(VERSION, '3', '>=')) {
-        	$address_data = $this->getAddressData($this->request->post, 'payment_');
-
-        	$address_data['firstname'] = $this->request->post['firstname'];
-			$address_data['lastname'] = $this->request->post['lastname'];
-
-			$address_id = $this->addAddress($address_data, $customer_id);
-
-			// Set the address as default
-			$this->model_account_customer->editAddressId($customer_id, $address_id);
-		}
-
         // Clear any previous login attempts for unregistered accounts.
         if (version_compare(VERSION, '2', '>=')) {
             $this->model_account_customer->deleteLoginAttempts($data['email']);
@@ -1227,7 +1199,7 @@ class ControllerJournal2Checkout extends Controller {
             $this->customer->login($data['email'], $data['password']);
 
             if (Journal2Utils::getProperty($this->request->post, 'shipping_address') != '1') {
-                $this->addAddress($this->getAddressData($this->request->post, 'shipping_'), $customer_id);
+                $this->model_account_address->addAddress($this->getAddressData($this->request->post, 'shipping_'));
             }
 
             // Add to activity log
@@ -1273,15 +1245,9 @@ class ControllerJournal2Checkout extends Controller {
                 // Check if customer has been approved.
                 $customer_info = $this->model_account_customer->getCustomerByEmail($this->request->post['email']);
 
-				if (version_compare(VERSION, '3', '>=')) {
-					if ($customer_info && !$customer_info['status']) {
-						$json['error']['warning'] = $this->language->get('error_approved');
-					}
-				} else {
-					if ($customer_info && !$customer_info['approved']) {
-						$json['error']['warning'] = $this->language->get('error_approved');
-					}
-				}
+                if ($customer_info && !$customer_info['approved']) {
+                    $json['error']['warning'] = $this->language->get('error_approved');
+                }
 
                 if (!isset($json['error'])) {
                     if (!$this->customer->login($this->request->post['email'], $this->request->post['password'])) {
@@ -1374,18 +1340,5 @@ class ControllerJournal2Checkout extends Controller {
         $this->response->addHeader('Content-Type: application/json');
         $this->response->setOutput(json_encode($json));
     }
-
-    private function addAddress($data, $customer_id = null) {
-    	if (version_compare(VERSION, '3', '>=')) {
-			return $this->model_account_address->addAddress($customer_id, $data);
-		}
-    	return $this->model_account_address->addAddress($data);
-	}
-
-	public function clear_success_message() {
-    	if (isset($this->session->data['success'])) {
-			unset($this->session->data['success']);
-		}
-	}
 
 }

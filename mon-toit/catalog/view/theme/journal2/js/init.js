@@ -186,19 +186,3 @@ $(window).load(function() {
     $('.modal').appendTo($('body'));
 }());
 
-// quick checkout trigger loading off
-if ($('html').hasClass('quick-checkout-page')) {
-	$(document).ajaxComplete(function (event, xhr, settings) {
-		if (settings.url.indexOf('payment/') !== -1) {
-			var json = xhr.responseJSON;
-
-			try {
-				if (json.error) {
-					triggerLoadingOff();
-				}
-			} catch (e) {
-				console.warn(e);
-			}
-		}
-	});
-}

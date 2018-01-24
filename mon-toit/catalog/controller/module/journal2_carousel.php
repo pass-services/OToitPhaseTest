@@ -402,7 +402,6 @@ class ControllerModuleJournal2Carousel extends Controller {
                     'thumb'         => $image,
                     'thumb2'        => $image2,
                     'name'          => $product['name'],
-					'minimum'		=> $product['minimum'] > 0 ? $product['minimum'] : 1,
                     'price'         => $price,
                     'special'       => $special,
                     'date_end'      => $date_end,

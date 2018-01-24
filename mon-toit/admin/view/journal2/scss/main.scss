@@ -2609,7 +2609,6 @@ a.news-export:before{
 }
 
 .oc2 {
-
   .collapse{
     transition: height 0.35s ease;
   }
@@ -2624,7 +2623,7 @@ a.news-export:before{
     top: 1px;
   }
   #journal-body .collapse {
-    display: block;
+     display: block;
     visibility: visible;
   }
   .accordion-inner ul {
@@ -2976,12 +2975,4 @@ html[dir="rtl"] {
   .store-picker {
     margin-left: -280px;
   }
-}
-
-.accordion-bar > .post-title {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: calc(100% - 270px);
 }

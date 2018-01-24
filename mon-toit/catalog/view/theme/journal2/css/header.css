@@ -970,9 +970,9 @@ Header Cart
   .oc2 .mini-cart-total table {
     padding: 5px 10px 3px 0; }
 
-@media only screen and (max-width: 760px) {
-  .no-secondary-on-mobile.default-header.currency-symbol .journal-currency {
-    left: 100%; } }
+.no-secondary-on-mobile.default-header.currency-symbol .journal-currency {
+  left: 100%; }
+
 @media only screen and (min-width: 980px) {
   .mobile-menu-on-tablet .journal-menu .mobile-menu > li {
     border-bottom-style: hidden; } }
@@ -1900,20 +1900,6 @@ html[dir="rtl"].boxed-header .journal-header-compact #header .journal-search {
     width: 100%; }
   .catalog-search .journal-header-center #cart {
     border-left-width: 0; } }
-.safari ul.menu-centered {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 /******************************
  STICKY HEADER
 *******************************/

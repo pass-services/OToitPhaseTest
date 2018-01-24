@@ -1266,11 +1266,10 @@ Header Cart
   }
 }
 
-@media only screen and (max-width: 760px){
-  .no-secondary-on-mobile.default-header.currency-symbol .journal-currency {
-    left: 100%;
-  }
+.no-secondary-on-mobile.default-header.currency-symbol .journal-currency {
+  left: 100%;
 }
+
 @media only screen and (min-width: 980px) {
   .mobile-menu-on-tablet .journal-menu .mobile-menu > li {
     border-bottom-style: hidden;
@@ -2478,14 +2477,6 @@ html[dir="rtl"].boxed-header {
         border-left-width:0;
       }
     }
-  }
-}
-
-.safari{
-  ul.menu-centered{
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 

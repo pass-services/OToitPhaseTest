@@ -50,18 +50,8 @@ class ControllerJournal2Snippets extends Controller {
         } else {
             $this->s_description = $meta_description  . '...';
         }
-
-		if (isset($this->request->server['HTTPS']) && $this->request->server['HTTPS']) {
-			$this->s_url = $this->config->get('config_ssl');
-		} else {
-			$this->s_url = $this->config->get('config_url');
-		}
-
-		if ($this->journal2->settings->get('retina_logo') && is_file(DIR_IMAGE . $this->journal2->settings->get('retina_logo'))) {
-			$this->s_image = $this->journal2->settings->get('retina_logo');
-		} else {
-			$this->s_image = $this->config->get('config_logo');
-		}
+        $this->s_url = Journal2Cache::getCurrentUrl();
+        $this->s_image = $this->config->get('config_logo');
 
         /* overwrite values */
         switch ($this->journal2->page->getType()) {
@@ -77,14 +67,13 @@ class ControllerJournal2Snippets extends Controller {
                     $this->journal2->settings->set('product_description', $product_info['meta_description']);
 
                     $this->journal2->settings->set('product_google_snippet', 'itemscope itemtype="http://schema.org/Product"');
-
                     if ((float)$product_info['special']) {
-						$price = $this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax'));
-					} else {
-						$price = $this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax'));
-					}
+                        $this->journal2->settings->set('product_price', round($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')) * 100) / 100);
+                    } else {
+                        $this->journal2->settings->set('product_price', round($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')) * 100) / 100);
+                    }
 
-					$this->journal2->settings->set('product_price', number_format($price, 2, '.', ''));
+                    $this->journal2->settings->set('product_price', preg_replace('/[^0-9,\.,\,]/', '', $this->journal2->settings->get('product_price')));
 
                     $this->journal2->settings->set('product_price_currency', $this->session->data['currency']);
                     $this->journal2->settings->set('product_num_reviews', $product_info['reviews']);
@@ -98,7 +87,7 @@ class ControllerJournal2Snippets extends Controller {
                     $this->data['text_no_reviews'] = $this->language->get('text_no_reviews');
 
                     if (isset($this->request->get['page'])) {
-                        $page = (int)$this->request->get['page'];
+                        $page = $this->request->get['page'];
                     } else {
                         $page = 1;
                     }
@@ -136,12 +125,14 @@ class ControllerJournal2Snippets extends Controller {
 
             case 'category':
                 $this->load->model('catalog/category');
-                $category_info = $this->model_catalog_category->getCategory($this->journal2->page->getId());
+                $parts = explode('_', $this->journal2->page->getId());
+                $category_id = (int)array_pop($parts);
+                $category_info = $this->model_catalog_category->getCategory($category_id);
                 if ($category_info) {
                     $this->s_title = $category_info['name'];
                     $this->s_description = trim(utf8_substr(strip_tags(html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8')), 0, 300));
                     $this->s_image = $category_info['image'];
-                    $this->s_url = $this->url->link('product/category', 'path=' . $this->journal2->page->getId());
+                    $this->s_url = $this->url->link('product/category', 'path=' . $category_id);
                 }
                 break;
 
@@ -156,14 +147,6 @@ class ControllerJournal2Snippets extends Controller {
                 }
                 break;
 
-			case 'journal-blog':
-				if ($this->journal2->page->getId()) {
-					$this->s_url = $this->url->link('journal2/blog', 'journal_blog_category_id=' . $this->journal2->page->getId());
-				} else {
-					$this->s_url = $this->url->link('journal2/blog');
-				}
-				break;
-
             case 'journal-blog-post':
                 $this->load->model('journal2/blog');
                 $post_info = $this->model_journal2_blog->getPost($this->journal2->page->getId());
@@ -175,14 +158,6 @@ class ControllerJournal2Snippets extends Controller {
                     $this->s_url = $this->url->link('journal2/blog/post', 'journal_blog_post_id=' . $this->journal2->page->getId());
                 }
                 break;
-
-			case 'information':
-				$this->s_url = $this->url->link('information/information', 'information_id=' . $this->journal2->page->getId());
-				break;
-
-			case 'contact':
-				$this->s_url = $this->url->link('information/contact');
-				break;
         }
 
         $metas = array();

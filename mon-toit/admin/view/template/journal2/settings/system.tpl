@@ -271,23 +271,5 @@
                 </li>
             </ul>
         </accordion-group>
-
-        <accordion-group is-open="true" data-ng-show="settings.developer_mode == 0">
-            <accordion-heading>
-                <div class="accordion-bar bar-level-0">Advanced Cache Options</div>
-            </accordion-heading>
-            <ul class="module-create-options">
-                <li>
-                    <span class="module-create-title">Cache By Customer Group ID</span>
-                    <span class="module-create-option">
-                        <switch data-ng-model="settings.cache_by_cg_id">
-                            <switch-option key="1">ON</switch-option>
-                            <switch-option key="0">OFF</switch-option>
-                        </switch>
-                    </span>
-                    <a href="#" target="_blank" class="journal-tip"></a>
-                </li>
-            </ul>
-        </accordion-group>
     </accordion>
 </div>

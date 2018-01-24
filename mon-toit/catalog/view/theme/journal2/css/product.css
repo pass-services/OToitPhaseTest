@@ -644,9 +644,6 @@ label[for="input-captcha"] + div {
       margin: 10px 0 0 10px; }
   #tab-review.tab-content ul li {
     margin-left: 0; }
-  #tab-review .form-group:nth-child(5) label {
-    position: relative;
-    top: -4px; }
 
 .oc2 #tab-review .form-group label {
   width: auto;
@@ -764,9 +761,9 @@ PRODUCT LABELS
   cursor: default; }
 .hide-cart .cart.outofstock .button.enquiry-button,
 .hide-cart .cart.outofstock #more-details {
-  opacity: 1 !important;
-  cursor: auto !important;
-  pointer-events: auto !important; }
+  opacity: 1;
+  cursor: auto;
+  pointer-events: auto; }
 .hide-cart td.outofstock > .btn-primary, .hide-cart td img.outofstock {
   opacity: .4;
   pointer-events: none;

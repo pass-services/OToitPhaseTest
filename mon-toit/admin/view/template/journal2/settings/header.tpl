@@ -277,16 +277,6 @@
                         </span>
                         <a href="#" target="_blank" class="journal-tip"></a>
                     </li>
-                    <li>
-                        <span class="module-create-title">Hide on Scroll Up</span>
-                        <span class="module-create-option">
-                        <switch data-ng-model="settings.sticky_header_hide">
-                            <switch-option key="1">ON</switch-option>
-                            <switch-option key="0">OFF</switch-option>
-                        </switch>
-                    </span>
-                        <a href="#" target="_blank" class="journal-tip"></a>
-                    </li>
                     <li data-ng-show="settings.sticky_header === '1' && settings.sticky_header_style === 'menu' || settings.sticky_header_style === 'central'">
                         <span class="module-create-title">Fullwidth Menu Background</span>
                         <span class="module-create-option">

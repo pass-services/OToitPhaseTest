@@ -2231,10 +2231,3 @@ html[dir="rtl"] #column-left + #content {
   margin-left: -400px; }
 .oc2.oc3 .store-picker {
   margin-left: -280px; }
-
-.accordion-bar > .post-title {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: calc(100% - 270px); }

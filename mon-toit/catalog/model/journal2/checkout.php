@@ -152,12 +152,14 @@ class ModelJournal2Checkout extends Model {
         $taxes = $this->cart->getTaxes();
         $total = 0;
 
-		// Because __call can not keep var references so we put them into an array.
-		$total_data = array(
-			'totals' => &$totals,
-			'taxes'  => &$taxes,
-			'total'  => &$total
-		);
+        // Because __call can not keep var references so we put them into an array.
+        $total_data = array(
+            'totals' => &$totals,
+            'taxes'  => &$taxes,
+            'total'  => &$total
+        );
+
+        $sort_order = array();
 
 		if (version_compare(VERSION, '3', '>=')) {
 			$this->load->model('setting/extension');
@@ -170,52 +172,39 @@ class ModelJournal2Checkout extends Model {
 			$results = $this->model_setting_extension->getExtensions('total');
 		}
 
-		$sort_order = array();
+        foreach ($results as $key => $value) {
+            $sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
+        }
 
-		foreach ($results as $key => $value) {
-			if (version_compare(VERSION, '3', '>=')) {
-				$sort_order[$key] = $this->config->get('total_' . $value['code'] . '_sort_order');
-			} else {
-				$sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
-			}
-		}
+        array_multisort($sort_order, SORT_ASC, $results);
 
-		array_multisort($sort_order, SORT_ASC, $results);
+        foreach ($results as $result) {
+            if ($this->config->get($result['code'] . '_status')) {
+                if (version_compare(VERSION, '2.3', '<')) {
+                    $this->load->model('total/' . $result['code']);
+                } else {
+                    $this->load->model('extension/total/' . $result['code']);
+                }
 
-		foreach ($results as $result) {
-			if (version_compare(VERSION, '3', '>=')) {
-				$status = $this->config->get('total_' . $result['code'] . '_status');
-			} else {
-				$status = $this->config->get($result['code'] . '_status');
-			}
+                if (version_compare(VERSION, '2.2', '<')) {
+                    $this->{'model_total_' . $result['code']}->getTotal($totals, $total, $taxes);
+                } else if (version_compare(VERSION, '2.3', '<')) {
+                    // We have to put the totals in an array so that they pass by reference.
+                    $this->{'model_total_' . $result['code']}->getTotal($total_data);
+                } else {
+                    // We have to put the totals in an array so that they pass by reference.
+                    $this->{'model_extension_total_' . $result['code']}->getTotal($total_data);
+                }
+            }
+        }
 
-			if ($status) {
-				if (version_compare(VERSION, '2.3', '<')) {
-					$this->load->model('total/' . $result['code']);
-				} else {
-					$this->load->model('extension/total/' . $result['code']);
-				}
+        $sort_order = array();
 
-				if (version_compare(VERSION, '2.2', '<')) {
-					$this->{'model_total_' . $result['code']}->getTotal($totals, $total, $taxes);
-				} else if (version_compare(VERSION, '2.3', '<')) {
-					// We have to put the totals in an array so that they pass by reference.
-					$this->{'model_total_' . $result['code']}->getTotal($total_data);
-				} else {
-					// We have to put the totals in an array so that they pass by reference.
-					$this->{'model_extension_total_' . $result['code']}->getTotal($total_data);
-				}
-			}
-		}
+        foreach ($totals as $key => $value) {
+            $sort_order[$key] = $value['sort_order'];
+        }
 
-		$sort_order = array();
-
-		foreach ($totals as $key => $value) {
-			$sort_order[$key] = $value['sort_order'];
-		}
-
-		array_multisort($sort_order, SORT_ASC, $totals);
-
+        array_multisort($sort_order, SORT_ASC, $totals);
         $this->order_data['totals'] = $totals;
         $this->order_data['total'] = $total;
 
@@ -278,58 +267,35 @@ class ModelJournal2Checkout extends Model {
 
         /* affiliates / marketing */
         if (isset($this->request->cookie['tracking'])) {
-			$this->order_data['tracking'] = $this->request->cookie['tracking'];
-			$subtotal = $this->cart->getSubTotal();
+            $this->order_data['tracking'] = $this->request->cookie['tracking'];
 
-        	if (version_compare(VERSION, '3', '>=')) {
-				// Affiliate
-				$affiliate_info = $this->model_account_customer->getAffiliateByTracking($this->request->cookie['tracking']);
+            $subtotal = $this->cart->getSubTotal();
 
-				if ($affiliate_info) {
-					$this->order_data['affiliate_id'] = $affiliate_info['customer_id'];
-					$this->order_data['commission'] = ($subtotal / 100) * $affiliate_info['commission'];
-				} else {
-					$this->order_data['affiliate_id'] = 0;
-					$this->order_data['commission'] = 0;
-				}
+            // Affiliate
+            $this->load->model('affiliate/affiliate');
 
-				// Marketing
-				$this->load->model('checkout/marketing');
+            $affiliate_info = $this->model_affiliate_affiliate->getAffiliateByCode($this->request->cookie['tracking']);
 
-				$marketing_info = $this->model_checkout_marketing->getMarketingByCode($this->request->cookie['tracking']);
+            if ($affiliate_info) {
+                $this->order_data['affiliate_id'] = $affiliate_info['affiliate_id'];
+                $this->order_data['commission'] = ($subtotal / 100) * $affiliate_info['commission'];
+            } else {
+                $this->order_data['affiliate_id'] = 0;
+                $this->order_data['commission'] = 0;
+            }
 
-				if ($marketing_info) {
-					$this->order_data['marketing_id'] = $marketing_info['marketing_id'];
-				} else {
-					$this->order_data['marketing_id'] = 0;
-				}
-			} else {
-				// Affiliate
-				$this->load->model('affiliate/affiliate');
+            // Marketing
+            if (version_compare(VERSION, '2', '>=')) {
+                $this->load->model('checkout/marketing');
 
-				$affiliate_info = $this->model_affiliate_affiliate->getAffiliateByCode($this->request->cookie['tracking']);
+                $marketing_info = $this->model_checkout_marketing->getMarketingByCode($this->request->cookie['tracking']);
 
-				if ($affiliate_info) {
-					$this->order_data['affiliate_id'] = $affiliate_info['affiliate_id'];
-					$this->order_data['commission'] = ($subtotal / 100) * $affiliate_info['commission'];
-				} else {
-					$this->order_data['affiliate_id'] = 0;
-					$this->order_data['commission'] = 0;
-				}
-
-				// Marketing
-				if (version_compare(VERSION, '2', '>=')) {
-					$this->load->model('checkout/marketing');
-
-					$marketing_info = $this->model_checkout_marketing->getMarketingByCode($this->request->cookie['tracking']);
-
-					if ($marketing_info) {
-						$this->order_data['marketing_id'] = $marketing_info['marketing_id'];
-					} else {
-						$this->order_data['marketing_id'] = 0;
-					}
-				}
-			}
+                if ($marketing_info) {
+                    $this->order_data['marketing_id'] = $marketing_info['marketing_id'];
+                } else {
+                    $this->order_data['marketing_id'] = 0;
+                }
+            }
         } else {
             $this->order_data['affiliate_id'] = 0;
             $this->order_data['commission'] = 0;
@@ -650,24 +616,14 @@ class ModelJournal2Checkout extends Model {
 
         $sort_order = array();
 
-		foreach ($results as $key => $value) {
-			if (version_compare(VERSION, '3', '>=')) {
-				$sort_order[$key] = $this->config->get('total_' . $value['code'] . '_sort_order');
-			} else {
-				$sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
-			}
-		}
+        foreach ($results as $key => $value) {
+            $sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
+        }
 
         array_multisort($sort_order, SORT_ASC, $results);
 
         foreach ($results as $result) {
-            if (version_compare(VERSION, '3', '>=')) {
-                $status = $this->config->get('total_' . $result['code'] . '_status');
-            } else {
-                $status = $this->config->get($result['code'] . '_status');
-            }
-
-            if ($status) {
+            if ($this->config->get($result['code'] . '_status')) {
                 if (version_compare(VERSION, '2.3', '<')) {
                     $this->load->model('total/' . $result['code']);
                 } else {
@@ -720,23 +676,13 @@ class ModelJournal2Checkout extends Model {
         $sort_order = array();
 
         foreach ($results as $key => $value) {
-        	if (version_compare(VERSION, '3', '>=')) {
-				$sort_order[$key] = $this->config->get('total_' . $value['code'] . '_sort_order');
-			} else {
-				$sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
-			}
+            $sort_order[$key] = $this->config->get($value['code'] . '_sort_order');
         }
 
         array_multisort($sort_order, SORT_ASC, $results);
 
         foreach ($results as $result) {
-            if (version_compare(VERSION, '3', '>=')) {
-                $status = $this->config->get('total_' . $result['code'] . '_status');
-            } else {
-                $status = $this->config->get($result['code'] . '_status');
-            }
-
-            if ($status) {
+            if ($this->config->get($result['code'] . '_status')) {
                 if (version_compare(VERSION, '2.3', '<')) {
                     $this->load->model('total/' . $result['code']);
                 } else {

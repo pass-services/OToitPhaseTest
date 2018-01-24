@@ -321,12 +321,6 @@
                             <input type="text" class="journal-input journal-sort" data-ng-model="slide.sort_order" />
                         </span>
                     </li>
-                    <li>
-                      <span class="module-create-title">Slide CSS Class</span>
-                      <span class="module-create-option">
-                        <input type="text" class="journal-input" data-ng-model="slide.classname" />
-                      </span>
-                    </li>
                 </ul>
             </div>
             <div class="accordion-bar bar-level-0 bar-expand" >
@@ -649,12 +643,6 @@
                                 <span class="module-create-option">
                                     <input type="text" class="journal-input journal-sort" data-ng-model="caption.sort_order" />
                                 </span>
-                            </li>
-                            <li>
-                              <span class="module-create-title">Caption CSS Class</span>
-                              <span class="module-create-option">
-                                <input type="text" class="journal-input" data-ng-model="caption.classname" />
-                              </span>
                             </li>
                         </ul>
                     </div>

@@ -72,15 +72,7 @@
                     }
                 };
 
-                var current = null;
-
                 $('#carousel-<?php echo $module; ?> .htabs a.atab').click(function () {
-                    if (this === current) {
-                      return;
-                    }
-
-                    current = this;
-
                     var opts = {
                         slidesPerView: grid[4][1],
                         slidesPerGroup: grid[4][1],

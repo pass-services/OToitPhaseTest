@@ -1144,12 +1144,3 @@ input[name='cc_number'] {
     display: block; }
     .oc1 #content.search-page select[name="category_id"] + span label {
       min-width: 85% !important; } }
-@media only screen and (max-width: 760px) {
-  .date > input {
-    min-width: 250px; } }
-.datepicker {
-  color: #222; }
-
-.oc3 .contact-page .panel-body .col-sm-3 {
-  float: left;
-  min-width: 25%; }

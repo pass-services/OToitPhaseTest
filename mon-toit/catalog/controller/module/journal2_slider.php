@@ -237,10 +237,6 @@ class ControllerModuleJournal2Slider extends Controller {
                     }
                 }
 
-				if (Journal2Utils::getProperty($slide, 'classname')) {
-					$slide_data[] = 'class="' . Journal2Utils::getProperty($slide, 'classname') . '"';
-				}
-
                 $captions = Journal2Utils::getProperty($slide, 'captions', array());
                 $captions = Journal2Utils::sortArray($captions);
                 $_captions = array();
@@ -513,10 +509,6 @@ class ControllerModuleJournal2Slider extends Controller {
                     }
                     $caption_classes[] = Journal2Utils::getProperty($caption, 'animation_in', 'fade');
                     $caption_classes[] = Journal2Utils::getProperty($caption, 'animation_out', 'fadeout');
-
-					if (Journal2Utils::getProperty($caption, 'classname')) {
-						$caption_classes[] = Journal2Utils::getProperty($caption, 'classname');
-					}
 
                     if (Journal2Utils::getProperty($caption, 'animation_in') === 'customin') {
                         $custom_in = array();

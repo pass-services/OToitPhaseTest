@@ -19,7 +19,7 @@
             <accordion-group data-ng-repeat="post in posts" is-open="false">
                 <accordion-heading>
                     <div class="accordion-bar bar-level-0 bar-pt">
-                        <div class="post-title">{{post.name}}</div>
+                        {{post.name}}
                         <span class="module-options">
                             <span>{{post.views}}</span>
                             <span class="p-com">{{post.comments}}</span>

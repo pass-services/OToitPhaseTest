@@ -826,10 +826,6 @@ label[for="input-captcha"] + div{
   &.tab-content ul li{
     margin-left:0;
   }
-  .form-group:nth-child(5) label {
-    position: relative;
-    top: -4px;
-  }
 }
 
 .oc2{
@@ -869,7 +865,6 @@ label[for="input-captcha"] + div{
 .product-info .product-options .cart > div > div{
   flex-grow:1;
 }
-
 
 /******************************
  TAGS
@@ -978,9 +973,9 @@ PRODUCT LABELS
     }
     .button.enquiry-button,
     #more-details{
-      opacity: 1 !important;
-      cursor: auto !important;
-      pointer-events: auto !important;
+      opacity: 1;
+      cursor: auto;
+      pointer-events: auto;
     }
   }
   td.outofstock > .btn-primary, td img.outofstock{

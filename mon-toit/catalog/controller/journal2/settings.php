@@ -442,7 +442,7 @@ class ControllerJournal2Settings extends Controller {
             case 'j-opt-background':
                 foreach (Journal2Utils::getBackgroundCssProperties($setting) as $sett) {
                     $this->css_settings[$md5_selector]['properties'][] = $sett;
-                    $parts = explode(':', $sett, 2);
+                    $parts = explode(':', $sett);
                     if (count($parts) > 1 && strlen(trim($parts[0])) && strlen(trim($parts[1]))) {
                         $this->journal2->settings->set($setting['name'] . ':' . trim($parts[0]), trim($parts[1]));
                     }
@@ -511,7 +511,7 @@ class ControllerJournal2Settings extends Controller {
             break;
             case 'j-opt-background':
                 foreach (Journal2Utils::getBackgroundCssProperties($setting) as $sett) {
-                    $parts = explode(':', $sett, 2);
+                    $parts = explode(':', $sett);
                     $this->journal2->settings->set($setting['name'] . ':' . $parts[0], $parts[1]);
                 }
             break;
@@ -704,9 +704,6 @@ class ControllerJournal2Settings extends Controller {
         if ($this->journal2->settings->get('out_of_stock_disable_button') === '1') {
             $this->journal2->html_classes->addClass('hide-cart');
         }
-
-        // cache
-		define('JOURNAL_CACHE_CG_ID', $this->journal2->settings->get('cache_by_cg_id', '0') == '1');
 
         $this->processFooter();
     }

@@ -320,10 +320,6 @@ html[dir="rtl"] .journal-carousel.arrows-top .swiper-button-prev {
 .journal-carousel .htabs.single-tab a {
   padding: 0; }
 
-.arrows-top .swiper-button-prev,
-.arrows-top .swiper-button-next {
-  width: 30px; }
-
 /******************************
 FULLSCREEN SLIDER
 *******************************/
@@ -672,7 +668,8 @@ CMS BLOCKS
     padding: 10px 0 0 25px;
     margin: 0; }
   .cms-block img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+    height: auto !important; }
   .cms-block video {
     max-width: 100%;
     height: auto; }
@@ -695,7 +692,8 @@ CMS BLOCKS
           flex-wrap: wrap; }
 
 p img {
-  max-width: 100% !important; }
+  max-width: 100% !important;
+  height: auto !important; }
 
 .block-icon {
   text-align: center;
@@ -1089,11 +1087,6 @@ ADVANCED GRID
 *******************************/
 .multi-modules-wrapper {
   overflow: hidden; }
-  .multi-modules-wrapper .tp-caption.fullscreenvideo {
-    height: 100% !important; }
-    .multi-modules-wrapper .tp-caption.fullscreenvideo video {
-      width: auto;
-      background: transparent; }
 
 .multi-modules-column {
   height: 100%; }
@@ -1101,6 +1094,12 @@ ADVANCED GRID
 .multi-modules-row {
   overflow: hidden;
   position: relative; }
+
+.tp-caption.fullscreenvideo {
+  height: 100% !important; }
+  .tp-caption.fullscreenvideo video {
+    width: auto;
+    background: transparent; }
 
 .multi-modules-row .tp-banner-container {
   height: 100% !important;

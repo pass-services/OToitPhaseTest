@@ -23,8 +23,7 @@ define(['./../module', 'underscore', 'underscore.string'], function (module, _, 
             fullscreen_slider_cache: 0,
             advanced_grid_cache: 0,
             carousel_grid_cache: 0,
-            side_products_cache: 0,
-			cache_by_cg_id: 0
+            side_products_cache: 0
         };
 
         $scope.table_columns = null;

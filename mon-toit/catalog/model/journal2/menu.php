@@ -114,9 +114,6 @@ class ModelJournal2Menu extends Model {
         if (version_compare(VERSION, '2', '>=') && $page === 'account/return/insert') {
             $page = 'account/return/add';
         }
-		if (version_compare(VERSION, '3', '>=') && $page === 'affiliate/account') {
-			$page = 'affiliate/login';
-		}
         return Journal2Utils::link($page, '', strpos($page, 'account/') === 0 || strpos($page, 'checkout/') === 0 || strpos($page, 'affiliate/') === 0 ? 'SSL' : '');
     }
 

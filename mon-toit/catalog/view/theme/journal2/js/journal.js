@@ -123,9 +123,7 @@ Journal.enableStickyHeader = function (padding) {
                 header.css('top', '-' + (Journal.stickyHeaderHeight) + 'px');
                 $('.tablet .is-sticky .mega-menu').hide();
             }
-			if(Journal.hasStickyScroll) {
-				lastScroll = currentScrollPosition;
-			}
+            lastScroll = currentScrollPosition;
 
         } else {
             $('body').removeClass('is-sticky').css('padding-top', padding);
@@ -1157,7 +1155,6 @@ Journal.SuperFilter.filter = function ($parent, ret) {
         var type = filters[i].name[0];
         var group = filters[i].group;
         for (var j in filters[i].filters) {
-			if (typeof filters[i].filters[j] === 'function') continue;
             keywords.push(filters[i].filters[j].keyword);
             values.push(filters[i].filters[j].value);
         }

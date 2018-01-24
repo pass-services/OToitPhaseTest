@@ -129,8 +129,7 @@ h2.refine {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    position: relative; }
+            align-items: center; }
     .product-filter > div b {
       position: relative;
       font-weight: normal; }
@@ -411,12 +410,6 @@ PRODUCT LIST
   .product-list-item.lt400 .product-list-item .image img {
     float: none; }
 
-@media only screen and (max-width: 470px) {
-  .product-list-item .image {
-    width: 100%; }
-
-  .product-list-item .product-details {
-    margin-left: 0; } }
 /******************************
  WISHLIST / COMPARE
 *******************************/

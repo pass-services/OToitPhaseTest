@@ -6471,8 +6471,7 @@ define('controllers/settings/system',['./../module', 'underscore', 'underscore.s
             fullscreen_slider_cache: 0,
             advanced_grid_cache: 0,
             carousel_grid_cache: 0,
-            side_products_cache: 0,
-			cache_by_cg_id: 0
+            side_products_cache: 0
         };
 
         $scope.table_columns = null;
@@ -18004,12 +18003,12 @@ define('directives/ckeditor',['./module'], function (module) {
                 require: '?ngModel',
                 link: function ($scope, $element, $attrs, $model) {
                     var ck = CKEDITOR.replace($element[0], {
-                        filebrowserBrowseUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserUploadUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserImageUploadUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token,
-                        filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&' + (Journal2Config.oc3 ? 'user_token=' : 'token=') + Journal2Config.token
+                        filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserUploadUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token,
+                        filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=' + Journal2Config.token
                     });
                     function updateModel() {
                         $scope.$apply(function () {

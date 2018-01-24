@@ -2,7 +2,7 @@
 <div id="container" class="container j-container">
     <ul class="breadcrumb">
         <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-            <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo $breadcrumb['href']; ?>" itemprop="url"><span itemprop="title"><?php echo $breadcrumb['text']; ?></span></a></li>
+            <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
         <?php } ?>
     </ul>
     <?php if ($error_warning) { ?>
@@ -191,7 +191,6 @@
 
     function _do_login() {
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/login',
             type: 'post',
             data: {
@@ -216,36 +215,19 @@
                 }
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
-    }
-
-    function _clear_success_message() {
-      $.ajax({
-        cache: false,
-        url: 'index.php?route=journal2/checkout/clear_success_message',
-        type: 'get',
-        dataType: 'html',
-        success: function(response){
-          console.log(response);
-          $('#cart ul').load('index.php?route=common/cart/info ul li');
-
-          $(document).trigger('journal_checkout_reload_payment');
-          $(document).trigger('journal_checkout_reload_shipping');
-        }
-      });
     }
 
     $(document).delegate('.journal-checkout .confirm-button', 'click', function () {
         var data = { };
 
-        $('.journal-checkout input[type="text"], .journal-checkout input[type="password"], .journal-checkout select, .journal-checkout input:checked, .journal-checkout textarea').each(function () {
+        $('.journal-checkout input[type="text"], .journal-checkout input[type="password"], .journal-checkout select, .journal-checkout input:checked, .journal-checkout textarea[name="comment"]').each(function () {
             data[$(this).attr('name')] = $(this).val();
         });
 
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/confirm',
             type: 'post',
             data: data,
@@ -302,14 +284,13 @@
                 }
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
 
     $(document).on('journal_checkout_customer_group_changed', function (e, value) {
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout',
             type: 'get',
             data: {
@@ -349,7 +330,7 @@
                 }
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
@@ -371,7 +352,6 @@
             <?php endif; ?>
         }
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/save',
             type: 'post',
             data: data,
@@ -385,14 +365,13 @@
                 <?php endif; ?>
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
 
     $(document).on('journal_checkout_shipping_changed', function (e, value) {
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/save',
             type: 'post',
             data: {
@@ -401,7 +380,6 @@
             dataType: 'json',
             success: function() {
                 $.ajax({
-                  cache: false,
                     url: 'index.php?route=journal2/checkout/cart_update',
                     type: 'post',
                     dataType: 'json',
@@ -417,14 +395,13 @@
                 $(document).trigger('journal_checkout_reload_cart');
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
 
     $(document).on('journal_checkout_payment_changed', function (e, value) {
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/save',
             type: 'post',
             data: {
@@ -435,14 +412,13 @@
                 $(document).trigger('journal_checkout_reload_cart');
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
 
     $(document).on('journal_checkout_reload_shipping', function () {
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/shipping',
             type: 'get',
             dataType: 'html',
@@ -459,14 +435,13 @@
                 $(document).trigger('journal_checkout_reload_cart');
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
 
     $(document).on('journal_checkout_reload_payment', function () {
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/payment',
             type: 'get',
             dataType: 'html',
@@ -483,14 +458,13 @@
                 $(document).trigger('journal_checkout_reload_cart');
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
 
     $(document).on('journal_checkout_reload_cart', function (e, first) {
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/cart',
             type: 'get',
             dataType: 'html',
@@ -510,7 +484,7 @@
                 $('.checkout-cart').replaceWith(html);
             },
             error: function(xhr, ajaxOptions, thrownError) {
-                console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
         });
     });
@@ -519,7 +493,6 @@
         var key = $(this).attr('data-product-key');
         var qty  = $('input[name="quantity[' + key + ']"]').val();
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/cart_update',
             type: 'post',
             data: {
@@ -556,7 +529,6 @@
     $(document).delegate('.checkout-product .input-group .btn-delete', 'click', function () {
         var key = $(this).attr('data-product-key');
         $.ajax({
-          cache: false,
             url: 'index.php?route=journal2/checkout/cart_delete',
             type: 'post',
             data: {
@@ -591,7 +563,6 @@
 
     $(document).delegate('#button-voucher', 'click', function() {
         $.ajax({
-          cache: false,
             <?php if (version_compare(VERSION, '2.3', '>=')): ?>
             url: 'index.php?route=extension/total/voucher/voucher',
             <?php elseif (version_compare(VERSION, '2.1', '>=')): ?>
@@ -616,7 +587,10 @@
                 if (json['error']) {
                     alert(json['error']);
                 } else {
-                    _clear_success_message();
+                    $('#cart ul').load('index.php?route=common/cart/info ul li');
+
+                    $(document).trigger('journal_checkout_reload_payment');
+                    $(document).trigger('journal_checkout_reload_shipping');
                 }
             }
         });
@@ -624,7 +598,6 @@
 
     $(document).delegate('#button-coupon', 'click', function() {
         $.ajax({
-          cache: false,
             <?php if (version_compare(VERSION, '2.3', '>=')): ?>
             url: 'index.php?route=extension/total/coupon/coupon',
             <?php elseif (version_compare(VERSION, '2.1', '>=')): ?>
@@ -649,7 +622,10 @@
                 if (json['error']) {
                     alert(json['error']);
                 } else {
-                    _clear_success_message();
+                    $('#cart ul').load('index.php?route=common/cart/info ul li');
+
+                    $(document).trigger('journal_checkout_reload_payment');
+                    $(document).trigger('journal_checkout_reload_shipping');
                 }
             }
         });
@@ -657,7 +633,6 @@
 
     $(document).delegate('#button-reward', 'click', function() {
         $.ajax({
-          cache: false,
             <?php if (version_compare(VERSION, '2.3', '>=')): ?>
             url: 'index.php?route=extension/total/reward/reward',
             <?php elseif (version_compare(VERSION, '2.1', '>=')): ?>
@@ -682,7 +657,10 @@
                 if (json['error']) {
                     alert(json['error']);
                 } else {
-                    _clear_success_message();
+                    $('#cart ul').load('index.php?route=common/cart/info ul li');
+
+                    $(document).trigger('journal_checkout_reload_payment');
+                    $(document).trigger('journal_checkout_reload_shipping');
                 }
             }
         });
@@ -716,83 +694,27 @@
     $(document).trigger('journal_checkout_reload_cart', true);
 
     <?php if ($this->journal2->settings->get('one_page_auto_save', '0') == '1'): ?>
-    function _auto_save() {
-      var data = {};
+    $('.journal-checkout input').on('blur', function() {
+        var data = { };
 
-      $('.journal-checkout input[type="text"], .journal-checkout input[type="hidden"], .journal-checkout input[type="password"], .journal-checkout select, .journal-checkout input:checked, .journal-checkout textarea').each(function () {
-        data[$(this).attr('name')] = $(this).val();
-      });
+        $('.journal-checkout input[type="text"], .journal-checkout input[type="password"], .journal-checkout select, .journal-checkout input:checked, .journal-checkout textarea[name="comment"]').each(function () {
+            data[$(this).attr('name')] = $(this).val();
+        });
 
-      $.ajax({
-        cache: false,
-        url: 'index.php?route=journal2/checkout/confirm&saveOnly=true',
-        type: 'post',
-        data: data,
-        dataType: 'json',
-        success: function () {
-          $(document).trigger('journal_checkout_reload_cart', true);
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
-          console.error && console.error(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-        }
-      });
-    }
-
-    $('.journal-checkout .left input').on('blur', _auto_save);
-    $('.journal-checkout input[type="hidden"]').on('change', _auto_save);
-    <?php endif; ?>
-
-    $(document).delegate('button[id^=\'button-payment-custom-field\']', 'click', function () {
-      var node = this;
-
-      $('#form-upload').remove();
-
-      $('body').prepend('<form enctype="multipart/form-data" id="form-upload" style="display: none;"><input type="file" name="file" /></form>');
-
-      $('#form-upload input[name=\'file\']').trigger('click');
-
-      if (typeof timer != 'undefined') {
-        clearInterval(timer);
-      }
-
-      timer = setInterval(function () {
-        if ($('#form-upload input[name=\'file\']').val() != '') {
-          clearInterval(timer);
-
-          $.ajax({
-            url: 'index.php?route=tool/upload',
+        $.ajax({
+            url: 'index.php?route=journal2/checkout/confirm&saveOnly=true',
             type: 'post',
+            data: data,
             dataType: 'json',
-            data: new FormData($('#form-upload')[0]),
-            cache: false,
-            contentType: false,
-            processData: false,
-            beforeSend: function () {
-              $(node).button('loading');
+            success: function() {
+                $(document).trigger('journal_checkout_reload_cart', true);
             },
-            complete: function () {
-              $(node).button('reset');
-            },
-            success: function (json) {
-              $('.text-danger').remove();
-
-              if (json['error']) {
-                $(node).parent().find('input[name^=\'custom_field\']').after('<div class="text-danger">' + json['error'] + '</div>');
-              }
-
-              if (json['success']) {
-                alert(json['success']);
-
-                $(node).parent().find('input[name*=\'custom_field\']').val(json['code']).trigger('change');
-              }
-            },
-            error: function (xhr, ajaxOptions, thrownError) {
-              alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+            error: function(xhr, ajaxOptions, thrownError) {
+                alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
             }
-          });
-        }
-      }, 500);
+        });
     });
+    <?php endif; ?>
 </script>
 <?php if (!version_compare(VERSION, '2', '>=')): ?>
     <script type="text/javascript"><!--

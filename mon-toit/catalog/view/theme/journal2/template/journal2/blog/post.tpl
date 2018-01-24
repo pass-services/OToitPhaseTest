@@ -2,7 +2,7 @@
 <div id="container" class="container j-container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo $breadcrumb['href']; ?>" itemprop="url"><span itemprop="title"><?php echo $breadcrumb['text']; ?></span></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
 <?php echo $column_left; ?><?php echo $column_right; ?>
@@ -58,7 +58,7 @@
 
             <div class="main-comment">
                 <div class="user-name"><?php echo $comment['name']; ?>:</div>
-                <div class="user-date"><?php echo date($date_format_short, strtotime($comment['date'])); ?>, <span class="user-time"><?php echo date($time_format, strtotime($comment['date'])); ?></span><?php if ($comment['website']): ?>, <span class="user-site"><a href="<?php echo $comment['website']; ?>" target="_blank" rel="nofollow"><?php echo preg_replace('#^https?://#', '', $comment['website']); ?></a></span><?php endif; ?></div>
+                <div class="user-date"><?php echo date($date_format_short, strtotime($comment['date'])); ?>, <span class="user-time"><?php echo date($time_format, strtotime($comment['date'])); ?></span><?php if ($comment['website']): ?>, <span class="user-site"><a href="<?php echo $comment['website']; ?>" target="_blank"><?php echo preg_replace('#^https?://#', '', $comment['website']); ?></a></span><?php endif; ?></div>
                 <a class="button reply-btn"><?php echo $this->journal2->settings->get('blog_reply_button', 'Reply'); ?></a>
                 <p><?php echo $comment['comment']; ?></p>
             </div>

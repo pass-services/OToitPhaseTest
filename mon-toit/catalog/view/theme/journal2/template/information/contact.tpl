@@ -3,7 +3,7 @@
 <div id="container" class="container j-container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo $breadcrumb['href']; ?>" itemprop="url"><span itemprop="title"><?php echo $breadcrumb['text']; ?></span></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
   <div class="row"><?php echo $column_left; ?><?php echo $column_right; ?>
@@ -29,7 +29,7 @@
               <?php echo $address; ?>
               </address>
               <?php if ($geocode) { ?>
-              <a href="https://maps.google.com/maps?q=<?php echo urlencode($geocode); ?>&hl=<?php echo isset($geocode_hl) ? $geocode_hl : 'en'; ?>&t=m&z=15" target="_blank" class="btn btn-info button"><i class="fa fa-map-marker"></i> <?php echo $button_map; ?></a>
+              <a href="https://maps.google.com/maps?q=<?php echo urlencode($geocode); ?>&hl=<?php echo isset($geocode_hl) ? $geocode : 'en'; ?>&t=m&z=15" target="_blank" class="btn btn-info button"><i class="fa fa-map-marker"></i> <?php echo $button_map; ?></a>
               <?php } ?>
             </div>
             <div class="col-sm-3 col"><strong><?php echo $text_telephone; ?></strong><br>

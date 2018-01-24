@@ -138,7 +138,7 @@
                                 class="fa fa-upload"></i> <?php echo $button_upload; ?></button>
                         <input type="hidden"
                                name="custom_field[<?php echo $custom_field['custom_field_id']; ?>]"
-                               value="<?php echo $custom_field['value']; ?>"
+                               value=""
                                id="input-payment-custom-field<?php echo $custom_field['custom_field_id']; ?>"/>
                     </div>
                 <?php } ?>

@@ -208,7 +208,7 @@
                                         data-loading-text="<?php echo $text_loading; ?>" class="btn btn-default"><i
                                         class="fa fa-upload"></i> <?php echo $button_upload; ?></button>
                                 <input type="hidden" name="<?php echo $type; ?>_custom_field[<?php echo $custom_field['custom_field_id']; ?>]"
-                                       value="<?php echo $custom_field['value']; ?>"
+                                       value=""
                                        id="input-<?php echo $type; ?>-custom-field<?php echo $custom_field['custom_field_id']; ?>"/>
                         </div>
                     <?php } ?>

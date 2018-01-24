@@ -126,13 +126,9 @@ class ModelJournal2Settings extends Model{
             }
         }
 
-        /* last id fix */
-		$skin_id_1 = (int)$this->db->query("SELECT MAX(skin_id) as max FROM " . DB_PREFIX . "journal2_skins")->row['max'];
-		$skin_id_2 = (int)$this->db->query("SELECT MAX(theme_id) as max FROM " . DB_PREFIX . "journal2_settings")->row['max'];
-		$new_skin_id = max($skin_id_1, $skin_id_2, 100) + 1;
-
         /* insert new skin into db */
-        $this->db->query("INSERT INTO " . DB_PREFIX . "journal2_skins SET `skin_id` = '" . (int)$new_skin_id . "', `skin_name` = '" . $this->db->escape($name) . "', `parent_id` = '" . (int)$parent_id . "'");
+        $this->db->query("INSERT INTO " . DB_PREFIX . "journal2_skins SET `skin_name` = '" . $this->db->escape($name) . "', `parent_id` = '" . (int)$parent_id . "'");
+        $new_skin_id = $this->db->getLastId();
 
         /* save skin data */
         $this->db->query("INSERT INTO " . DB_PREFIX . "journal2_settings (`theme_id`, `key`, `category`, `value`, `serialized`) (SELECT " . $new_skin_id . ", `key`, `category`, `value`, `serialized` FROM " . DB_PREFIX . "journal2_settings WHERE `theme_id` = '" . (int)$skin_id. "')");

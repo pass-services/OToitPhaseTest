@@ -21,13 +21,6 @@
     }
 <?php endif; ?>
 
-
-<?php if($this->journal2->settings->get('product_page_title_position', 'top') === 'right'): ?>
-    .quickview .product-info .heading-title{
-    display:none;
-    }
-<?php endif; ?>
-
 @media only screen and (min-width: 760px){
 .ui-pnotify{
   width:<?php echo $this->journal2->settings->get('notification_width', 350); ?>px !important;

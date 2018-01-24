@@ -10,14 +10,7 @@ class ControllerModuleJournal2 extends Controller {
 
     protected function render() {
         if (version_compare(VERSION, '3', '>=')) {
-			$class = new ReflectionClass('Template');
-
-			if (count($constructor = $class->getConstructor()->getParameters()) > 1) {
-				// d_twig_manager fix
-				$template = new Template('template', $this->registry);
-			} else {
-				$template = new Template('template');
-			}
+            $template = new Template('template');
 
             foreach ($this->data as $key => $value) {
                 $template->set($key, $value);
@@ -315,9 +308,9 @@ class ControllerModuleJournal2 extends Controller {
     public function clear_cache() {
         if ($this->user->hasPermission('modify', 'module/journal2')) {
             Journal2Cache::deleteCache();
-//            $this->session->data['success'] = 'Journal Cache has been successfully cleared.';
+            $this->session->data['success'] = 'Journal Cache has been successfully cleared.';
         } else {
-//            $this->session->data['warning'] = 'You do not have permissions to modify Journal2 module.';
+            $this->session->data['warning'] = 'You do not have permissions to modify Journal2 module.';
         }
         if (isset($this->session->data['j2_redirect'])) {
             $redirect = Journal2Utils::link($this->session->data['j2_redirect'], version_compare(VERSION, '3', '>=') ? ('user_token=' . $this->session->data['user_token']) : ('token=' . $this->session->data['token']), 'SSL');

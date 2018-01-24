@@ -21,15 +21,9 @@ class ModelSettingExtension extends Model {
 	}
 
 	public function uninstall($type, $code) {
-        if (strpos($code, 'journal2_') === 0) {
-        	return;
-		}
-
+        if (strpos($code, 'journal2_') === 0) return;
 		$this->db->query("DELETE FROM `" . DB_PREFIX . "extension` WHERE `type` = '" . $this->db->escape($type) . "' AND `code` = '" . $this->db->escape($code) . "'");
-
-        if (version_compare(VERSION, '2', '>=')) {
-			$this->db->query("DELETE FROM `" . DB_PREFIX . "setting` WHERE `code` = '" . $this->db->escape($type . '_' . $code) . "'");
-		}
+		$this->db->query("DELETE FROM `" . DB_PREFIX . "setting` WHERE `code` = '" . $this->db->escape($type . '_' . $code) . "'");
 	}
 
     public function uninstallJ2Extension($type, $code) {

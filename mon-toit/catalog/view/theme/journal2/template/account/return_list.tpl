@@ -2,7 +2,7 @@
 <div id="container" class="container j-container">
   <ul class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="<?php echo $breadcrumb['href']; ?>" itemprop="url"><span itemprop="title"><?php echo $breadcrumb['text']; ?></span></a></li>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
     <?php } ?>
   </ul>
   <div class="row"><?php echo $column_left; ?><?php echo $column_right; ?>
@@ -18,7 +18,7 @@
       <?php echo $content_top; ?>
       <div class="content">
       <?php if ($returns) { ?>
-      <table class="table list table-bordered table-hover">
+      <table class="table table-bordered table-hover">
         <thead>
           <tr>
             <td class="text-right"><?php echo $column_return_id; ?></td>
@@ -37,7 +37,7 @@
             <td class="text-left"><?php echo $return['date_added']; ?></td>
             <td class="text-right"><?php echo $return['order_id']; ?></td>
             <td class="text-left"><?php echo $return['name']; ?></td>
-            <td><a href="<?php echo $return['href']; ?>" data-toggle="tooltip" title="<?php echo $button_view; ?>" class="btn btn-primary button"><i class="fa fa-eye"></i></a></td>
+            <td><a href="<?php echo $return['href']; ?>" data-toggle="tooltip" title="<?php echo $button_view; ?>" class="btn btn-info"><i class="fa fa-eye"></i></a></td>
           </tr>
           <?php } ?>
         </tbody>

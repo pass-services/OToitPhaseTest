@@ -111,11 +111,7 @@ SIDE COLUMN
     position: absolute;
     transition: background-color 0.2s, color 0.2s;
     display: table;
-    line-height: 100%;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    line-height: 100%; }
     .side-column .side-category i span {
       position: relative;
       display: table-cell; }

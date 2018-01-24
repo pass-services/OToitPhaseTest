@@ -90,8 +90,7 @@
     margin: 0 10px 10px 0; }
 
 .notification-buttons {
-  float: none;
-  width: 100%;
+  float: left;
   margin-bottom: 10px; }
   .notification-buttons a {
     display: inline-block;
@@ -476,7 +475,7 @@ TOOLTIPS
 
 .option li.hint--top:before,
 .option li.hint--top:after {
-  display: block !important; }
+  display: block; }
 
 .option ul .hint--top:first-of-type:after {
   -webkit-transform-style: preserve-3d;

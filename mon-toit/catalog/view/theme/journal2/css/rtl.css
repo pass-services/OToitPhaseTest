@@ -901,10 +901,7 @@ html[dir="rtl"] .product-list-item .product-details {
 @media only screen and (max-width: 760px) {
   html[dir="rtl"] .product-list-item .product-details {
     margin-left: 0;
-    margin-right: 0; }
-
-  html[dir="rtl"] .journal-newsletter:not(.text-top) .box-content {
-    display: block; } }
+    margin-right: 0; } }
 @media only screen and (min-width: 760px) {
   html[dir="rtl"].boxed-header .journal-header-center .journal-cart {
     padding-right: 0;
@@ -912,41 +909,3 @@ html[dir="rtl"] .product-list-item .product-details {
   html[dir="rtl"] .product-list-item .product-details {
     margin-left: auto;
     margin-right: 212px; } }
-html[dir='rtl'].is-guest .spw > div:last-of-type {
-  border-left-width: 1px;
-  border-right-width: 0; }
-
-html[dir='rtl'].is-guest .spw > div:first-of-type {
-  padding-right: 10px;
-  border-right-width: 1px;
-  border-left-width: 0; }
-
-html[dir='rtl'] .journal-checkout .coupon-voucher .cvr > div:not(:nth-child(2)) {
-  padding-right: 0;
-  padding-left: 12px; }
-
-html[dir='rtl'] .journal-checkout .checkout-cart tbody tr:first-of-type td {
-  border-right-width: 1px;
-  border-left-width: 0; }
-
-html[dir='rtl'] .journal-checkout .checkout-cart table tbody td.total {
-  border-left-width: 1px; }
-
-html[dir='rtl'] .journal-checkout .checkout-cart thead td:last-of-type {
-  border-right-width: 0;
-  border-left-width: 1px; }
-
-html[dir='rtl'] .journal-checkout .checkout-cart thead td:first-of-type {
-  border-right-width: 1px;
-  border-left-width: 0; }
-
-html[dir='rtl'] .journal-checkout .checkout-cart tfoot td:last-of-type {
-  border-right-width: 0;
-  border-left-width: 1px; }
-
-html[dir='rtl'] .journal-checkout .checkout-cart tfoot td:first-of-type {
-  border-right-width: 1px;
-  border-left-width: 0; }
-
-html[dir='rtl'] .journal-checkout select {
-  margin-right: 0; }

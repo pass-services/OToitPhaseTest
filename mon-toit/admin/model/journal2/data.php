@@ -41,9 +41,12 @@ class ModelJournal2Data extends Model{
     }
 
     public function export() {
-		header('Content-Type: application/octet-stream');
-		header('Content-Disposition: attachment; filename=' . date('Y-m-d_H-i-s', time()).'_backup.sql');
-		header('Content-Transfer-Encoding: binary');
+        header('Pragma: public');
+        header('Expires: 0');
+        header('Content-Description: File Transfer');
+        header('Content-Type: text/plain');
+        header('Content-Disposition: attachment; filename=' . date('Y-m-d_H-i-s', time()).'_backup.sql');
+        header('Content-Transfer-Encoding: binary');
 
         /* opencart version */
         $from = version_compare(VERSION, '2', '>=') ? Journal2Export::OC2 : Journal2Export::OC1;

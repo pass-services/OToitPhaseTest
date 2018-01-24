@@ -45,13 +45,6 @@
                     <a href="#" target="_blank" class="journal-tip"></a>
                 </li>
                 <li>
-                    <span class="module-create-title">Foreground Text Hover Color</span>
-                    <span class="module-create-option">
-                        <j-opt-color data-ng-model="settings.product_grid_foreground_hover"></j-opt-color>
-                    </span>
-                    <a href="#" target="_blank" class="journal-tip"></a>
-                </li>
-                <li>
                     <span class="module-create-title">Padding</span>
                         <span class="module-create-option">
                               <j-opt-text data-ng-model="settings.product_grid_item_padding" class="journal-number-field"></j-opt-text>
