@@ -1,4 +1,4 @@
-html, body, .container, .container-fluid, .row {
+html, body, header, .container, .container-fluid, .row {
     height: 100%;
 }
 
