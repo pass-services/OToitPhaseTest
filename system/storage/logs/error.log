@@ -1,2 +1,0 @@
-2017-07-17 8:06:06 - PHP Warning:  move_uploaded_file(/var/www/html/image//data/journal2/logo.png): failed to open stream: Permission denied in /var/www/html/system/storage/modification/admin/controller/common/filemanager.php on line 308
-2017-07-17 8:06:06 - PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpohJszC' to '/var/www/html/image//data/journal2/logo.png' in /var/www/html/system/storage/modification/admin/controller/common/filemanager.php on line 308
