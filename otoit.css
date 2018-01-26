@@ -9,3 +9,17 @@ section {
 html {
     min-height: 100%;
 }
+
+header.otoithead {
+    {
+        text-align:center;
+        color:#fff;
+        background-color: #ffee00;
+        background-repeat:no-repeat;
+        background-attachment:scroll;
+        background-position:center center;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover
+}
