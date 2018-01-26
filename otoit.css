@@ -2,6 +2,10 @@ html, body, header, .container, .container-fluid, .row {
     height: 100%;
 }
 
+section {
+    height: 50%;
+}
+
 html {
     min-height: 100%;
 }
