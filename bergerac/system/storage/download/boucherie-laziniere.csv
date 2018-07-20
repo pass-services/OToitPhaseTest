@@ -1,0 +1,103 @@
+Product ID;Product Name;Model Number;Language Code;Store (Store 1 :: Store 2);Description;Meta Title;Meta Description;Meta Keyword;Tag;Product Image;SKU;UPC;EAN;JAN;ISBN;MPN;Location;Price;Minimum Quantity;Quantity;"Status 
+(Enabled=1/Disabled=0)";Sort Order;Tax Class ID;Tax Class;"Subtract 
+(Yes=1/No=0)";Stock Status ID;Stock Status;"Shipping Required 
+(Yes=1/No=0)";"SEO Keyword 
+(unique to store and without space)";Date Available (YYYY-MM-DD);Length;Length Class ID;Length Class;Width;Height;Weight;Weight Class ID;Weight Class;Manufacturer ID;Manufacturer;"Categories 
+Category ID 1, Category ID 2";"Categories Name 
+Category 1 :: Category 2";"Filter 
+Group Name - Value :: Group Name - Value";"Download 
+Download 1 :: Download 2";"Related Products 
+Product ID 1, Product ID 2";"Attribute 
+Name::Group::Value; Name::Group::Value";"Options 
+Option Name 1 :: Type 1 :: Required 1 :: value 1.1 ^^ Value 1.2 ^^ Value 1.3 || value 1.1 ^^ Value 1.2 ^^ Value 1.3 ;; 
+Option Name 2 :: Type 2 :: Required 2 :: value 2.1 ^^ Value 2.2 ^^ Value 2.3 || value 1.1 ^^ Value 1.2 ^^ Value 1.3 ;;";"Discount 
+CustomerGroup::Quantity::Priority::Price::DateStart::DateEnd;";"Special 
+CustomerGroup::Priority::Price::DateStart::DateEnd;";"Additional Images 
+Image1 :: Image2";Reward Points;"Reward CustomerGroup::Points;";Viewed;Date Added (YYYY-MM-DD HH:MM:SS);Date Modified (YYYY-MM-DD HH:MM:SS);"Reviews 
+(CustomerID::Author::Text::
+Rating::Status::DateAdded::DateModified;;)";;;;;
+2410010000;Brochettes d?abas;2410010000;fr-fr;0;Brochettes d?abas;Brochettes d?abas;Brochettes d?abas;Brochettes d?abas;Brochettes d?abas;catalog/PRODUIT/LAZINIERE/2410010000-1.jpg;Brochettes d?abas;;;2410010000;;;;1,99;;1;1;;12;;1;7;;;Brochettes d?abas;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:01;2009-02-03 16:59:01;;;;;;
+2410010001;Brochettes de veau;2410010001;fr-fr;0;Brochettes de veau;Brochettes de veau;Brochettes de veau;Brochettes de veau;Brochettes de veau;catalog/PRODUIT/LAZINIERE/2410010001-1.jpg;Brochettes de veau;;;2410010001;;;;2,65;;1;1;;12;;1;7;;;Brochettes de veau;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:02;2009-02-03 16:59:02;;;;;;
+2410010002;Brochettes de b?uf;2410010002;fr-fr;0;Brochettes de b?uf;Brochettes de b?uf;Brochettes de b?uf;Brochettes de b?uf;Brochettes de b?uf;catalog/PRODUIT/LAZINIERE/2410010002-1.jpg;Brochettes de b?uf;;;2410010002;;;;2,27;;1;1;;12;;1;7;;;Brochettes de b?uf;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:03;2009-02-03 16:59:03;;;;;;
+2410010003;Brochettes de porc / pruneaux;2410010003;fr-fr;0;Brochettes de porc / pruneaux;Brochettes de porc / pruneaux;Brochettes de porc / pruneaux;Brochettes de porc / pruneaux;Brochettes de porc / pruneaux;catalog/PRODUIT/LAZINIERE/2410010003-1.jpg;Brochettes de porc / pruneaux;;;2410010003;;;;2,18;;1;1;;12;;1;7;;;Brochettes de porc / pruneaux;;;;;;;;;;19;;226,475,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:04;2009-02-03 16:59:04;;;;;;
+2410010004;R“ti de dinde;2410010004;fr-fr;0;R“ti de dinde;R“ti de dinde;R“ti de dinde;R“ti de dinde;R“ti de dinde;catalog/PRODUIT/LAZINIERE/2410010004-1.jpg;R“ti de dinde;;;2410010004;;;;13,18;;1;1;;12;;1;7;;;R“ti de dinde;;;;;;;;;;19;;226,476,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010004-2.jpg;;;;2009-02-03 16:59:05;2009-02-03 16:59:05;;;;;;
+2410010005;R“ti de veau;2410010005;fr-fr;0;R“ti de veau;R“ti de veau;R“ti de veau;R“ti de veau;R“ti de veau;;R“ti de veau;;;2410010005;;;;24,93;;1;0;;12;;1;7;;;R“ti de veau;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:06;2009-02-03 16:59:06;;;;;;
+2410010006;R“ti de porc;2410010006;fr-fr;0;R“ti de porc;R“ti de porc;R“ti de porc;R“ti de porc;R“ti de porc;catalog/PRODUIT/LAZINIERE/2410010006-1.jpg;R“ti de porc;;;2410010006;;;;12,23;;1;1;;12;;1;7;;;R“ti de porc;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:07;2009-02-03 16:59:07;;;;;;
+2410010007;R“ti de b?uf;2410010007;fr-fr;0;R“ti de b?uf;R“ti de b?uf;R“ti de b?uf;R“ti de b?uf;R“ti de b?uf;;R“ti de b?uf;;;2410010007;;;;23,7;;1;0;;12;;1;7;;;R“ti de b?uf;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:08;2009-02-03 16:59:08;;;;;;
+2410010008;Epaule d?agneau roul‚e;2410010008;fr-fr;0;Epaule d?agneau roul‚e;Epaule d?agneau roul‚e;Epaule d?agneau roul‚e;Epaule d?agneau roul‚e;Epaule d?agneau roul‚e;;Epaule d?agneau roul‚e;;;2410010008;;;;18,48;;1;0;;12;;1;7;;;Epaule d?agneau roul‚e;;;;;;;;;;19;;226,475,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:09;2009-02-03 16:59:09;;;;;;
+2410010009;Entrec“tes de b?uf;2410010009;fr-fr;0;Entrec“tes de b?uf;Entrec“tes de b?uf;Entrec“tes de b?uf;Entrec“tes de b?uf;Entrec“tes de b?uf;catalog/PRODUIT/LAZINIERE/2410010009-1.jpg;Entrec“tes de b?uf;;;2410010009;;;;24,45;;1;1;;12;;1;7;;;Entrec“tes de b?uf;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:10;2009-02-03 16:59:10;;;;;;
+2410010010;C“tes de b?uf;2410010010;fr-fr;0;C“tes de b?uf;C“tes de b?uf;C“tes de b?uf;C“tes de b?uf;C“tes de b?uf;;C“tes de b?uf;;;2410010010;;;;23,7;;1;0;;12;;1;7;;;C“tes de b?uf;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:11;2009-02-03 16:59:11;;;;;;
+2410010011;Bavette d?aloyau;2410010011;fr-fr;0;Bavette d?aloyau;Bavette d?aloyau;Bavette d?aloyau;Bavette d?aloyau;Bavette d?aloyau;catalog/PRODUIT/LAZINIERE/2410010011-1.jpg;Bavette d?aloyau;;;2410010011;;;;20,66;;1;1;;12;;1;7;;;Bavette d?aloyau;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010011-2.jpg;;;;2009-02-03 16:59:12;2009-02-03 16:59:12;;;;;;
+2410010012;Plat de c“te;2410010012;fr-fr;0;Plat de c“te;Plat de c“te;Plat de c“te;Plat de c“te;Plat de c“te;catalog/PRODUIT/LAZINIERE/2410010012-1.jpg;Plat de c“te;;;2410010012;;;;0,95;;1;1;;12;;1;7;;;Plat de c“te;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:13;2009-02-03 16:59:13;;;;;;
+2410010013;Jarret de b?uf;2410010013;fr-fr;0;Jarret de b?uf;Jarret de b?uf;Jarret de b?uf;Jarret de b?uf;Jarret de b?uf;catalog/PRODUIT/LAZINIERE/2410010013-1.jpg;Jarret de b?uf;;;2410010013;;;;0,95;;1;1;;12;;1;7;;;Jarret de b?uf;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010013-2.jpg;;;;2009-02-03 16:59:14;2009-02-03 16:59:14;;;;;;
+2410010014;Morceaux … bourguignon (b?uf);2410010014;fr-fr;0;Morceaux … bourguignon (b?uf);Morceaux … bourguignon (b?uf);Morceaux … bourguignon (b?uf);Morceaux … bourguignon (b?uf);Morceaux … bourguignon (b?uf);catalog/PRODUIT/LAZINIERE/2410010014-1.jpg;Morceaux … bourguignon (b?uf);;;2410010014;;;;0,95;;1;1;;12;;1;7;;;Morceaux … bourguignon (b?uf);;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010014-2.jpg;;;;2009-02-03 16:59:15;2009-02-03 16:59:15;;;;;;
+2410010015;Morceaux … bourguignon (veau);2410010015;fr-fr;0;Morceaux … bourguignon (veau);Morceaux … bourguignon (veau);Morceaux … bourguignon (veau);Morceaux … bourguignon (veau);Morceaux … bourguignon (veau);catalog/PRODUIT/LAZINIERE/2410010015-1.jpg;Morceaux … bourguignon (veau);;;2410010015;;;;0,95;;1;1;;12;;1;7;;;Morceaux … bourguignon (veau);;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:16;2009-02-03 16:59:16;;;;;;
+2410010016;Morceaux … blanquette (dinde);2410010016;fr-fr;0;Morceaux … blanquette (dinde);Morceaux … blanquette (dinde);Morceaux … blanquette (dinde);Morceaux … blanquette (dinde);Morceaux … blanquette (dinde);catalog/PRODUIT/LAZINIERE/2410010016-1.jpg;Morceaux … blanquette (dinde);;;2410010016;;;;0,95;;1;1;;12;;1;7;;;Morceaux … blanquette (dinde);;;;;;;;;;19;;226,476,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:17;2009-02-03 16:59:17;;;;;;
+2410010017;C“tes d?agneau;2410010017;fr-fr;0;C“tes d?agneau;C“tes d?agneau;C“tes d?agneau;C“tes d?agneau;C“tes d?agneau;catalog/PRODUIT/LAZINIERE/2410010017-1.jpg;C“tes d?agneau;;;2410010017;;;;0,95;;1;1;;12;;1;7;;;C“tes d?agneau;;;;;;;;;;19;;226,475,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:18;2009-02-03 16:59:18;;;;;;
+2410010018;C“tes de veau;2410010018;fr-fr;0;C“tes de veau;C“tes de veau;C“tes de veau;C“tes de veau;C“tes de veau;catalog/PRODUIT/LAZINIERE/2410010018-1.jpg;C“tes de veau;;;2410010018;;;;0,95;;1;1;;12;;1;7;;;C“tes de veau;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:19;2009-02-03 16:59:19;;;;;;
+2410010019;Cuisses de poulets;2410010019;fr-fr;0;Cuisses de poulets;Cuisses de poulets;Cuisses de poulets;Cuisses de poulets;Cuisses de poulets;catalog/PRODUIT/LAZINIERE/2410010019-1.jpg;Cuisses de poulets;;;2410010019;;;;0,95;;1;1;;12;;1;7;;;Cuisses de poulets;;;;;;;;;;19;;226,476,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010019-2.jpg;;;;2009-02-03 16:59:20;2009-02-03 16:59:20;;;;;;
+2410010020;Escalopes de poulet;2410010020;fr-fr;0;Escalopes de poulet;Escalopes de poulet;Escalopes de poulet;Escalopes de poulet;Escalopes de poulet;catalog/PRODUIT/LAZINIERE/2410010020-1.jpg;Escalopes de poulet;;;2410010020;;;;0,95;;1;1;;12;;1;7;;;Escalopes de poulet;;;;;;;;;;19;;226,476,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:21;2009-02-03 16:59:21;;;;;;
+2410010021;Escalopes de dinde;2410010021;fr-fr;0;Escalopes de dinde;Escalopes de dinde;Escalopes de dinde;Escalopes de dinde;Escalopes de dinde;catalog/PRODUIT/LAZINIERE/2410010021-1.jpg;Escalopes de dinde;;;2410010021;;;;0,95;;1;1;;12;;1;7;;;Escalopes de dinde;;;;;;;;;;19;;226,476,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010021-2.jpg;;;;2009-02-03 16:59:22;2009-02-03 16:59:22;;;;;;
+2410010022;Tendrons de veau;2410010022;fr-fr;0;Tendrons de veau;Tendrons de veau;Tendrons de veau;Tendrons de veau;Tendrons de veau;catalog/PRODUIT/LAZINIERE/2410010022-1.jpg;Tendrons de veau;;;2410010022;;;;0,95;;1;1;;12;;1;7;;;Tendrons de veau;;;;;;;;;;19;;226,474,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010022-2.jpg;;;;2009-02-03 16:59:23;2009-02-03 16:59:23;;;;;;
+2410010023;Saucisses grosses;2410010023;fr-fr;0;Saucisses grosses;Saucisses grosses;Saucisses grosses;Saucisses grosses;Saucisses grosses;catalog/PRODUIT/LAZINIERE/2410010023-1.jpg;Saucisses grosses;;;2410010023;;;;0,95;;1;1;;12;;1;7;;;Saucisses grosses;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010023-2.jpg;;;;2009-02-03 16:59:24;2009-02-03 16:59:24;;;;;;
+2410010024;Chipolatas;2410010024;fr-fr;0;Chipolatas;Chipolatas;Chipolatas;Chipolatas;Chipolatas;catalog/PRODUIT/LAZINIERE/2410010024-1.jpg;Chipolatas;;;2410010024;;;;0,95;;1;1;;12;;1;7;;;Chipolatas;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:25;2009-02-03 16:59:25;;;;;;
+2410010025;Merguez;2410010025;fr-fr;0;Merguez;Merguez;Merguez;Merguez;Merguez;catalog/PRODUIT/LAZINIERE/2410010025-1.jpg;Merguez;;;2410010025;;;;0,95;;1;1;;12;;1;7;;;Merguez;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:26;2009-02-03 16:59:26;;;;;;
+2410010026;Chorizo … cuire;2410010026;fr-fr;0;Chorizo … cuire;Chorizo … cuire;Chorizo … cuire;Chorizo … cuire;Chorizo … cuire;;Chorizo … cuire;;;2410010026;;;;0,95;;1;0;;12;;1;7;;;Chorizo … cuire;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:27;2009-02-03 16:59:27;;;;;;
+2410010027;Boudin noir;2410010027;fr-fr;0;Boudin noir;Boudin noir;Boudin noir;Boudin noir;Boudin noir;catalog/PRODUIT/LAZINIERE/2410010027-1.jpg;Boudin noir;;;2410010027;;;;0,95;;1;1;;12;;1;7;;;Boudin noir;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010027-2.jpg;;;;2009-02-03 16:59:28;2009-02-03 16:59:28;;;;;;
+2410010028;Boudin blanc;2410010028;fr-fr;0;Boudin blanc;Boudin blanc;Boudin blanc;Boudin blanc;Boudin blanc;;Boudin blanc;;;2410010028;;;;0,95;;1;0;;12;;1;7;;;Boudin blanc;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:29;2009-02-03 16:59:29;;;;;;
+2410010029;Andouillette;2410010029;fr-fr;0;Andouillette;Andouillette;Andouillette;Andouillette;Andouillette;catalog/PRODUIT/LAZINIERE/2410010029-1.jpg;Andouillette;;;2410010029;;;;0,95;;1;1;;12;;1;7;;;Andouillette;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:30;2009-02-03 16:59:30;;;;;;
+2410010030;Saumon fum‚ artisanal;2410010030;fr-fr;0;Saumon fum‚ artisanal;Saumon fum‚ artisanal;Saumon fum‚ artisanal;Saumon fum‚ artisanal;Saumon fum‚ artisanal;;Saumon fum‚ artisanal;;;2410010030;;;;0,95;;1;0;;12;;1;7;;;Saumon fum‚ artisanal;;;;;;;;;;19;;227,479,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:31;2009-02-03 16:59:31;;;;;;
+2410010031;Gratton de porc;2410010031;fr-fr;0;Gratton de porc;Gratton de porc;Gratton de porc;Gratton de porc;Gratton de porc;catalog/PRODUIT/LAZINIERE/2410010031-1.jpg;Gratton de porc;;;2410010031;;;;0,95;;1;1;;12;;1;7;;;Gratton de porc;;;;;;;;;;19;;228,484,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:32;2009-02-03 16:59:32;;;;;;
+2410010032;Gratton de canard;2410010032;fr-fr;0;Gratton de canard;Gratton de canard;Gratton de canard;Gratton de canard;Gratton de canard;catalog/PRODUIT/LAZINIERE/2410010032-1.jpg;Gratton de canard;;;2410010032;;;;0,95;;1;1;;12;;1;7;;;Gratton de canard;;;;;;;;;;19;;228,484,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:33;2009-02-03 16:59:33;;;;;;
+2410010033;Pƒt‚ de campagne;2410010033;fr-fr;0;Pƒt‚ de campagne;Pƒt‚ de campagne;Pƒt‚ de campagne;Pƒt‚ de campagne;Pƒt‚ de campagne;catalog/PRODUIT/LAZINIERE/2410010033-1.jpg;Pƒt‚ de campagne;;;2410010033;;;;0,95;;1;1;;12;;1;7;;;Pƒt‚ de campagne;;;;;;;;;;19;;228,484,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:34;2009-02-03 16:59:34;;;;;;
+2410010034;Petit pƒt‚ rond;2410010034;fr-fr;0;Petit pƒt‚ rond;Petit pƒt‚ rond;Petit pƒt‚ rond;Petit pƒt‚ rond;Petit pƒt‚ rond;catalog/PRODUIT/LAZINIERE/2410010034-1.jpg;Petit pƒt‚ rond;;;2410010034;;;;0,95;;1;1;;12;;1;7;;;Petit pƒt‚ rond;;;;;;;;;;19;;228,484,489;;Proximit‚ PGC - Proximit‚;;;;;;;catalog/PRODUIT/LAZINIERE/2410010034-2.jpg;;;;2009-02-03 16:59:35;2009-02-03 16:59:35;;;;;;
+2410010035;Coustille de porc;2410010035;fr-fr;0;Coustille de porc;Coustille de porc;Coustille de porc;Coustille de porc;Coustille de porc;catalog/PRODUIT/LAZINIERE/2410010035-1.jpg;Coustille de porc;;;2410010035;;;;0,95;;1;1;;12;;1;7;;;Coustille de porc;;;;;;;;;;19;;226,475,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:36;2009-02-03 16:59:36;;;;;;
+2410010036;Enchaud;2410010036;fr-fr;0;Enchaud;Enchaud;Enchaud;Enchaud;Enchaud;;Enchaud;;;2410010036;;;;0,95;;1;0;;12;;1;7;;;Enchaud;;;;;;;;;;19;;228,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:37;2009-02-03 16:59:37;;;;;;
+2410010037;Grillade de porc;2410010037;fr-fr;0;Grillade de porc;Grillade de porc;Grillade de porc;Grillade de porc;Grillade de porc;catalog/PRODUIT/LAZINIERE/2410010037-1.jpg;Grillade de porc;;;2410010037;;;;0,95;;1;1;;12;;1;7;;;Grillade de porc;;;;;;;;;;19;;226,475,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:38;2009-02-03 16:59:38;;;;;;
+2410010038;Jambon du Pays Basque;2410010038;fr-fr;0;Jambon du Pays Basque;Jambon du Pays Basque;Jambon du Pays Basque;Jambon du Pays Basque;Jambon du Pays Basque;catalog/PRODUIT/LAZINIERE/2410010038-1.jpg;Jambon du Pays Basque;;;2410010038;;;;0,95;;1;1;;12;;1;7;;;Jambon du Pays Basque;;;;;;;;;;19;;228,485,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:39;2009-02-03 16:59:39;;;;;;
+2410010039;Ventre de veau;2410010039;fr-fr;0;Ventre de veau;Ventre de veau;Ventre de veau;Ventre de veau;Ventre de veau;;Ventre de veau;;;2410010039;;;;0,95;;1;0;;12;;1;7;;;Ventre de veau;;;;;;;;;;19;;228,489;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:40;2009-02-03 16:59:40;;;;;;
+2410010040;Saucisse confite;2410010040;fr-fr;0;Saucisse confite;Saucisse confite;Saucisse confite;Saucisse confite;Saucisse confite;catalog/PRODUIT/LAZINIERE/2410010040-1.jpg;Saucisse confite;;;2410010040;;;;0,95;;1;1;;12;;1;7;;;Saucisse confite;;;;;;;;;;19;;228,489,494;;Proximit‚ PGC - Proximit‚;;;;;;;;;;;2009-02-03 16:59:41;2009-02-03 16:59:41;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Changer le monde ? Commençons par faire nos courses</title>
+<!-- Bootstrap Core CSS -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="assets/css/stylish-portfolio.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.png" />
+</head>
+<body id="page-top">
+<!-- Header -->
+	<!-- DEBUT INCLUDE DU HEADER -->		
+<?php include('header.php'); ?>
+<!-- FIN INCLUDE DU HEADER -->	
+
+
+
+	
+	
+	
+	<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 1  CARROUSSEL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<div class="container-fluid my-auto car1  padHAUT  minimge miniH2 jaunehaut">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+			<div class="carousel-inner">
+				<div class="carousel-item active ">
+						<div class="row">
+							<div class="col-md-4  "></div>
+							<div class="col-md-4 col-sm-12 col-xs-1 ">
+								<img src="assets/img/groslogo3.png"  class="d-inline-block img-fluid align-top" alt="">
+								
+							</div>				
+							<div class="col-md-4 col-sm-12 col-xs-1 "></div>
+						</div>
+				</div>
+				<div class="carousel-item  text-center">
+					<div class="row padHAUT">
+						<div class="col-md-2"></div>
+						<div class="col-md-8 ">
+							<p class="intro"><span class="introtitre">Avec O’toit</span><br>faire ses courses c’est mettre les produits<br>
+	des producteurs, des artisans, des commerçants <br> et nos marques préférées dans le même panier.</p>
+						</div>
+						<div class="col-md-2"></div>
+					</div>	
+				</div>
+			</div>
+					
+				
+					<a class="carousel-control-prev nodisplay " href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<img src="assets/img/gauche.png" alt="test" >
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next nodisplay" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<img src="assets/img/droite.png" alt="test" >
+						<span class="sr-only">Next</span>
+					</a>
+						
+		</div>
+		
+	<div class="row mtopm25">
+							<div class="col-md-4  "></div>
+							<div class="col-md-4 col-sm-12 col-xs-1 ">
+									<div class="row">	
+									<div class="col-md-4 col-sm-4 col-xs-4 nopad1"><a href="#montoit"><img src="assets/img/btn1.png" alt="aremplir" class="img-fluid"></a>	</div>
+									<div class="col-md-4 col-sm-4 col-xs-4 nopad1"><a href="#"><img src="assets/img/btn2.png" alt="aremplir" class="img-fluid"></a></div>	
+									<div class="col-md-4 col-sm-4 col-xs-4 nopad1"><a href="../toitest3/"><img src="assets/img/btn3.png" alt="aremplir" class="img-fluid"></a>	</div>	
+								<br><br>
+								<ol class="carousel-indicators carousel-indicators2 bullets ">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+ 
+  </ol>
+								
+								
+								
+								</div>
+							</div>				
+							<div class="col-md-4 col-sm-12 col-xs-1 "></div>
+						</div>	
+		<br>
+		
+		
+		</div>
+		
+	
+			<div class="jaunehautbis">
+				<div class="defileParent2 ">
+					<span class="defile2" data-text=" Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ?"> 
+					<span class="">Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class="">Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> O’toit ce n’est pas un enième drive ni un autre site de proximité. </span>
+					<span class="">Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class="">Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> O’toit ce n’est pas un enième drive ni un autre site de proximité. </span>
+					
+					
+					</span>
+				</div>
+		</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 2   FD BLANC !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<div class="masthead3 d-flex  miniH2">
+		<div class="container-fluid minimge ">	
+			
+			<div id="montoit" class="row hmge  ">
+					
+					<div class="col-md-7 col-sm-8 col-xs-12 "><div class="hidden-lg "></div>
+						<h1 class="introtitre ">O’toit</h1><br>
+						<p  class="intro2light ">C’est une manière simple et facile de changer le monde,<br> de lutter contre le réchauffement de
+la planète, de préparer un monde meilleur pour nos enfants, et de réconcilier  les marques, les producteurs et les artisans. C’est une vraie
+nouvelle façon de faire nos courses en redynamisant nos territoires.</p>
+					</div>
+					<div class="col-md-5 col-sm-4 col-xs-12 mgeD "><div class="hidden-lg "></div><img src="assets/img/wahou-otoit.png" alt="test" class="img-fluid"></div>
+			</div>
+			</div></div>
+			<div class="">
+				<div class="defileParent2 ">
+					<span class="defile2" data-text=" O’toit ce n’est pas un enième drive ni un autre site de proximité. "> 
+					<span class="">O’toit ce n’est pas un enième drive ni un autre site de proximité.  </span><span class=""> O’toit ce n’est pas un enième drive ni un autre site de proximité.  </span><span class=""> O’toit ce n’est pas un enième drive ni un autre site de proximité. </span>
+					<span class="">O’toit ce n’est pas un enième drive ni un autre site de proximité.  </span><span class=""> O’toit ce n’est pas un enième drive ni un autre site de proximité.  </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class="">Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> Prendre soin de la planète ? Lutter contre le chômage ? Éduquer nos enfants ? </span><span class=""> O’toit ce n’est pas un enième drive ni un autre site de proximité. </span>
+					
+					
+					</span>
+				</div>
+		</div>
+	
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 3  CARROUSSEL ROSE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<div class="container-fluid my-auto     minimge rose ">
+		<div id="carouselExampleIndicators3" class="carousel slide miniH" data-ride="carousel" data-interval="5000">
+			<div class="carousel-inner miniH">
+				<div class="carousel-item active ">
+			
+					<div class="row ">
+						
+						<div class="col-md-6 col-lg-6 col-sm-10">
+							
+							<p class="introtitre">Plus la peine <br>de courir partout :</p>
+							<p class="intro2light">ici vous trouverez vos marques préférées,<br> vos artisans, vos commerçants <br>(boulangers, charcutiers, poissonniers etc.)<br>
+		et les producteurs de la région.</p>
+						</div>
+						<div class="col-md-6 col-lg-6 col-sm-12 "><img src="assets/img/Aliments.gif" alt="test" class="img-fluid">
+						<br><br></div>
+						
+					</div>
+				</div>
+				<div class="carousel-item miniH  ">
+					<div class="row  ">
+						
+						<div class="col-md-7 col-sm-10 ">
+							
+							<span class="introtitre">Comment ça marche ?</span><br>
+							<span class="intro2">Rien de plus simple !</span>
+							
+							
+							<ol><li class="intro2light">je commande sur le site.</li>
+							<li class="intro2light">je viens chercher mes courses dans le toit de mon choix.</li>
+							<li class="intro2light">j’en profite pour prendre un café échanger et partager sur des thèmes qui m’intéressent.</li>
+						</ol>
+						
+						</div>
+						<div class="col-md-1 "></div>
+						<div class="col-md-4 col-sm-12"><div class="reduit"><img src="assets/img/process.png" alt="test"  class="img-fluid"></div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+						<img src="assets/img/gauche.png" alt="test" >
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+						<img src="assets/img/droite.png" alt="test" >
+						<span class="sr-only">Next</span>
+					</a>
+						<ol class="carousel-indicators bullets ">
+    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+ 
+  </ol>
+		</div>
+		
+	</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 4 FD BLANC !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+		
+		
+		<div  class="masthead3 d-flex  miniH padHAUT minimge ">
+		<div class="container-fluid  ">
+				<div class="row">
+					<div class="col-md-12 text-center ">	
+						<h2 class="introtitre" >O’toit... pas de blabla</h2>
+						<p class="intro2">Pas d’engagements grandiloquents !<br>
+Nos réelles différences : </p>
+					</div>
+				</div>	
+				<br>
+				<div class="row">
+				
+				<div class="col-md-12 intro2light  ">
+				<div class="row">
+					<div class="col-md-4   "><span class="gras">A.</span> Les producteurs, les artisans et les marques fixent leurs prix. 
+					</div>
+					<div class="col-md-4   "><span class="gras">B.</span> Les bénéfices de chaque toit permettent de dynamiser l’emploi et de participer au développement économique de votre région. 
+					</div>
+					<div class="col-md-4  "><span class="gras">C.</span> Pas de gaspillage : nous faisons produire uniquement ce que vous commandez.
+					</div>
+					</div></div>
+					
+				</div>	
+		</div>	
+		</div>	
+		<br>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 5 TOIT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+			
+	<div class="container-fluid  ">
+		<div class="row haut fdvertpale "><br>
+			<div class="col-md-4  introtitre3 minimge2  ">O’toit<br> Bergerac,<br>le premier<br>toit d’une <br>longue série.  
+			</div>
+			<div class="col-md-8 fdimg1">
+			</div>
+			
+		</div>
+	</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 6 TOIT ARTICLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+	<div class="container-fluid presse blog miniH2 minimge">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row ">
+								<div class="col-md-3 paddy ">
+								<div class="article">
+									<p class="introtitre4 " >O’TOIT BERGERAC</p>
+									<p class="intro4light">Est le premier toit d’une longue série. Notre volonté : ouvrir des toits dans toutes les régions. Pourquoi?
+									Pour recréer du lien en centre ville, pour participer à l’économie des régions pour que chacun et chacune agisse pour un
+									monde qui va dans le bon sens.
+									</p>
+								<img src="assets/img/pomme.png" alt="test"  class="img-fluid">
+								</div>
+								</div>
+								<div class="col-md-3 paddy  ">
+								<div class="article">
+									<p class="introtitre4" >RENDEZ-VOUS SUR LES RÉSEAUX SOCIAUX</p>
+<p class="intro4light">Pour suivre l’actualité des Toits.</p>
+									<p>
+									<a href="https://www.facebook.com/OToit-Bergerac-2119632094728793/" target="_blank"> <img src="assets/img/facebook.png" alt="test"></a>
+									<a href="https://twitter.com/mvtlucioles" target="_blank"> <img src="assets/img/twitter.png" alt="test"></a>
+									<a href="https://www.instagram.com/mouvementlucioles/" target="_blank"> <img src="assets/img/Instagram.png" alt="test" ></a></p>
+									
+								</div>
+								<div class="article">
+								<img src="assets/img/homme.png" alt="test" class="img-fluid"  >
+								<p class="introtitre4" >VENEZ FAIRE CONNAISSANCE ET PRENDRE UN CAFÉ</p>
+					<p class="intro4light">Lionel vous accueille : 26, rue des Oiseaux, Marsac</p>
+								</div></div>
+								<div class="col-md-3 paddy ">
+								<div class="article">
+									<p class="introtitre4" >BIENTÔT DANS VOTRE TOIT.</p>
+									<p class="intro4light">	<span>Des conférences;<br>Des débats,<br>Des ateliers culinaires<br>Des goûters pour les enfants et les plus grands<br>
+					Des thèmes variés<br>comme l’anti-gaspillage,<br>la consommation fraternelle, <br>l’écologie au quotidien. <br>Et aussi LE PANIER SOLIDAIRE</span></p>
+										<img src="assets/img/bois2.png" alt="test" class="img-fluid">
+								</div></div>
+								<div class="col-md-3 paddy ">
+									<div class="article">
+									<p class="introtitre4" >PROCHAINEMENT SUR LE SITE O’TOIT </p>
+									<p class="intro4light">Partagez et notez vos produits préférés en faisant vos courses.</p>			
+									<img src="assets/img/legumes.png" alt="test" class="img-fluid">
+									</div>
+									<div class="article">
+									<p class="introtitre4" >EN CE MOMENT DANS VOTRE TOIT</p>
+									<p class="intro4light">Atelier remplacer l’avocat par des légumes régionaux par Marie belle productrice.</p>
+									
+								</div>
+								</div>
+							</div>	
+				</div>			
+</div>				
+			
+	</div> 
+		
+		
+		
+			<div class="container-fluid   minimge">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row ">
+								<div class="col-md-3 paddy ">
+								<div class="article">
+									
+								</div>
+								</div>
+								<div class="col-md-3 paddy  ">
+								<div class="article">
+									
+								</div>
+								</div>
+								<div class="col-md-3 paddy ">
+								<div class="article">
+									
+								</div>
+								</div>
+								<div class="col-md-3 paddy ">
+									
+									<div class="article">
+									
+								</div>
+								</div>
+							</div>	
+				</div>			
+</div>				
+			
+	</div> 
+		
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 7 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<br><br><br><br>
+		
+	<div class="container-fluid ">
+	
+		<div class="row text-center">
+				<div class="col-lg-4 col-md-3 col-xs-1 col-sm-1"></div>
+				<div class="col-lg-4 col-md-6 col-xs-10 col-sm-10">
+				<div class="gros">
+				<a href="e-shop.php" class="eight50 btn btn-outline-dark btn-block" role="button" > <br> <div ><img src="assets/img/case.png" class="img-fluid vali" alt="test"><span  class="introtitre4 blanhov"> Entrez c'est ouvert !</span></div><br><br></a>
+				<br></div>
+				
+				</div>
+				<div class="col-lg-4 col-md-3 col-xs-1 col-sm-1"></div>
+		
+		</div>
+	</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 8 les lucioles !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->		
+		
+<div class="container-fluid  miniH2  jaunehaut2  ">
+	<div class="row text-center ">
+			<div class="col-md-4"></div>
+				<div class="col-md-4   ">
+				<br>	<img src="assets/img/badge-lucioles.png" class="img-fluid" alt="test" ></div>
+				</div>
+				<div class="col-md-4 ">
+					
+				
+				
+					</div>
+			<div class="row text-center margemoins">
+		<div class="col-md-12 ptop "><br>
+					<p class="intro3light">Chez O’toit, pas de clients, pas <br> de clientes,
+						pas de consommateurs, <br>pas de consommatrices, des <br><span class="introtitre3">Lucioles.</span></p><br>
+								
+				</div>
+		</div>
+		
+	
+				</div>
+	
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 9 ETES VOUS UNE LUCIOLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->		
+	<div id="luciole" class="masthead3 d-flex  miniH2 padHAUT">
+		<div class="container-fluid minimge ">
+				<div class="row">
+					<div class="col-md-12 text-center ">	
+						<h2 class="introtitre" >Êtes-vous une luciole ?</h2>
+					</div>
+				</div>	
+				<br>
+				<div class="row">
+										<div class="col-md-4 intro2light ">
+											<ul>
+												<li>Vous vous intéressez au monde qui vous entoure ?</li>
+												<li>Vous êtes préoccupé par l’écologie, vous demandez souvent si faire 
+					votre compost et vous déplacer à vélo est suffisant pour aider le monde de demain ? </li>
+											</ul>
+										</div>
+										<div class="col-md-4 intro2light  ">
+											<ul>
+											<li>Vous ne voulez pas perdre de temps à faire vos courses mais vous voulez être sûr de ce que
+					vous achetez ?</li>
+											<li>Vous voulez encourager l’économie 
+					de votre région et vous désirez voir votre centre ville vivre mieux ? </li></ul>
+										</div>
+										<div class="col-md-4 intro2light ">
+										<ul><li>Vous avez envie d’agir pour vous, vos amis, votre famille, aujourd’hui pour demain ?</li></ul>
+									<br>	<p class ="intro2light bord gras">Rejoignez le mouvement des lucioles sur Facebook </p>
+<span>Et découvrez qu’ensemble tout devient possible (à commencer par éclairer le présent). </span>
+								<br><br><div ><a href="https://www.facebook.com/MouvementLucioles/" target="_blank"><img src="assets/img/devenir-une-luciole.png" alt="aremplir">	</a></div><br><br>	</div>
+					<br></div>
+	</div>
+	</div>	
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ZONE 9 ETES VOUS UNE LUCIOLE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->		
+	
+
+	
+	
+	
+	
+	
+	
+	<!-- 
+	<div class="container-fluid  presse miniH2 padHAUT ">
+		<div class="row ">
+			
+			<div class="col-md-3  paddy">
+				<div class="article">
+				<h4>Pour devenir une luciole, rejoignez le mouvement sur Facebook </h4>
+				<p>Et découvrez qu’ensemble tout devient possible (à commencer par 
+				éclairer le présent). </p>
+				<a href="https://www.facebook.com/MouvementLucioles/" target="_blank"><img src="assets/img/facebook.png" alt="test" class="img-fluid"></a>
+				</div>
+			</div>
+			<div class="col-md-3  paddy">
+				<div class="article">
+				<h4>Luciole lumineuse? </h4>
+					<p>Vous désirez devenir une Luciole en chef et propager l’idée O’Toit ?  
+					C’est facile : demandez votre kit de luciole et c’est parti !  <br>
+					Contact : </p>
+					<img src="assets/img/adresse-mail.png" alt="test" class="img-fluid">
+			</div></div>
+			<div class="col-md-6 ">
+				
+				<img src="assets/img/boisson.png" alt="test" class="img-fluid">
+			</div>
+		</div>
+	</div>
+	 -->
+	
+	
+
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- DEBUT INCLUDE DU FOOTER -->		
+<?php include('footer.php'); ?>
+<!-- FIN INCLUDE DU FOOTER -->	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<!-- FIN FOOTER -->	
+	<!-- Scroll to Top Button-->
+			<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+				<i class="fa fa-angle-up"></i>
+			</a>
+    <!-- Bootstrap core JavaScript -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="assets/js/stylish-portfolio.min.js"></script>
+	<script src="assets/js/monscript.js"></script>
+</body>
+</html>
