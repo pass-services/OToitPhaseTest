@@ -20,7 +20,7 @@
 		<div class="collapse  navbar-collapse" id="navbarNav">
 					
 			<ul class="navbar-nav menu blackfont">
-			 <li class="nav-item"><a class="nav-link" href="https://o-toit.fr/bergerac/#">La Boutique <span class="sr-only">(current)</span></a></li>
+			 <li class="nav-item"><a class="nav-link" href="http://otoit.cleverapps.io/bergerac/#">La Boutique <span class="sr-only">(current)</span></a></li>
 			  <li class="nav-item"><a class="nav-link" href="#luciole">Devenez une Luciole</a> </li>
 			  <li class="nav-item"><a class="nav-link " href="fournisseur.php">Devenez  Fournisseur</a></li>
 			<!--  <li class="nav-item"><a class="nav-link" href="#">trouver un toit</a></li> -->
