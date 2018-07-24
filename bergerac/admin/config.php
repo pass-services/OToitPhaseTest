@@ -1,7 +1,7 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'https://o-toit.fr/bergerac/admin/');
-define('HTTP_CATALOG', 'https://o-toit.fr/bergerac/');
+define('HTTP_SERVER', 'http://otoit.cleverapps.io/bergerac/admin/');
+define('HTTP_CATALOG', 'http://otoit.cleverapps.io/bergerac/');
 
 // HTTPS
 define('HTTPS_SERVER', 'https://o-toit.fr/bergerac/admin/');
