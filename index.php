@@ -228,7 +228,7 @@ Nos réelles différences : </p>
 			
 			
 
-			<a href="https://o-toit.fr/bergerac/"><button type="button" class="btn btn-dark btn-lg  btn-link"><i class="fa fa-shopping-cart caddy" aria-hidden="true"></i>  <span class="introtitre4 white"> Entrez, c'est ouvert !</span></button></a>
+			<a href="http://otoit.cleverapps.io/bergerac/"><button type="button" class="btn btn-dark btn-lg  btn-link"><i class="fa fa-shopping-cart caddy" aria-hidden="true"></i>  <span class="introtitre4 white"> Entrez, c'est ouvert !</span></button></a>
 			</div>
 			
 			
