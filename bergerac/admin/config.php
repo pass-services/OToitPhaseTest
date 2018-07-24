@@ -23,9 +23,9 @@ define('DIR_CATALOG', '/var/www/html/bergerac/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
-define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'otoit');
-define('DB_PASSWORD', 'oTo1tdela');
+define('DB_HOSTNAME', 'bxsbp46v8-mysql.services.clever-cloud.com');
+define('DB_USERNAME', 'ucuhpcyth82wavgt');
+define('DB_PASSWORD', 'bxsbp46v8');
 define('DB_DATABASE', 'toitest3');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
