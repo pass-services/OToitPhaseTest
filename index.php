@@ -18,6 +18,9 @@
 <link rel="icon" href="assets/img/favicon.png" />
 </head>
 <body id="page-top">
+<!-- Application configuration -->
+<?php include('config.php'; ?>
+<!-- FIN INCLUDE DE CONFIG -->
 <!-- Header -->
 	<!-- DEBUT INCLUDE DU HEADER -->		
 <?php include('header.php'); ?>
