@@ -32,6 +32,7 @@ define('DB_PREFIX', 'oc_');
 
 // Cache
 define('CACHE_DRIVER', 'file'); // 'file', 'apc', 'mem' or 'memcached'
+define('CACHE_EXPIRE', '3600');
 //define('CACHE_HOSTNAME', 'localhost');
 //define('CACHE_PORT', '11211');
 //define('CACHE_PREFIX', 'oc_');
