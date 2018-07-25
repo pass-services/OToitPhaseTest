@@ -31,7 +31,7 @@ define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
 
 // Cache
-define('CACHE_DRIVER', 'mem'); // 'file', 'apc', 'mem' or 'memcached'
-define('CACHE_HOSTNAME', 'localhost');
-define('CACHE_PORT', '11211');
-define('CACHE_PREFIX', 'oc_');
+define('CACHE_DRIVER', 'file'); // 'file', 'apc', 'mem' or 'memcached'
+//define('CACHE_HOSTNAME', 'localhost');
+//define('CACHE_PORT', '11211');
+//define('CACHE_PREFIX', 'oc_');
