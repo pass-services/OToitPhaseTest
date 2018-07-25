@@ -73,7 +73,7 @@
 							<div class="col-md-4 col-sm-12 col-xs-1 ">
 									<div class="row">	
 									<div class="col-md-4 col-sm-4 col-xs-4 nopad2"><a href="#montoit"><img src="assets/img/btn1.png" alt="aremplir" class="img-fluid"></a>	</div>
-									<div class="col-md-4 col-sm-4 col-xs-4 "><a href="https://o-toit.fr/bergerac/"><img src="assets/img/btn3.png" alt="aremplir" class="img-fluid animated infinite  pulse"></a>	</div>	
+									<div class="col-md-4 col-sm-4 col-xs-4 "><a href="<?php echo APP_ROOT ?>/bergerac/"><img src="assets/img/btn3.png" alt="aremplir" class="img-fluid animated infinite  pulse"></a>	</div>	
 							<div class="col-md-4 col-sm-4 col-xs-4 nopad2"><a href="#interet"><img src="assets/img/btn2.png" alt="aremplir" class="img-fluid"></a></div>	
 										<br><br>
 								<ol class="carousel-indicators carousel-indicators2 bullets ">  
@@ -231,7 +231,7 @@ Nos réelles différences : </p>
 			
 			
 
-			<a href="https://o-toit.fr/bergerac/"><button type="button" class="btn btn-dark btn-lg  btn-link"><i class="fa fa-shopping-cart caddy" aria-hidden="true"></i>  <span class="introtitre4 white"> Entrez, c'est ouvert !</span></button></a>
+			<a href="<?php echo APP_ROOT ?>/bergerac/"><button type="button" class="btn btn-dark btn-lg  btn-link"><i class="fa fa-shopping-cart caddy" aria-hidden="true"></i>  <span class="introtitre4 white"> Entrez, c'est ouvert !</span></button></a>
 			</div>
 			
 			
