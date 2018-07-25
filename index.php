@@ -340,7 +340,7 @@ Nos réelles différences : </p>
 				<div class="col-lg-4 col-md-6 col-xs-10 col-sm-10">
 				<div class="">
 				
-				<a href="https://o-toit.fr/bergerac/" > <br> <div ><img src="assets/img/bouton-entrer.png" class="img-fluid " alt="test"></div><br><br></a>
+				<a href="https://o-toit.fr<?php echo APP_ROOT ?>/bergerac/" > <br> <div ><img src="assets/img/bouton-entrer.png" class="img-fluid " alt="test"></div><br><br></a>
 				
 				
 				
