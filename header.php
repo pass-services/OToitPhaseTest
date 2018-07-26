@@ -43,7 +43,7 @@
 </header>
 
 	<div class="icon-bar ">
-		   <a href="https://o-toit.fr/bergerac/"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> 
+		   <a href="http://otoit.cleverapps.io/bergerac/"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> 
 	
 
 		<a href="https://www.facebook.com/OToit-Bergerac-2119632094728793/" target="_blank"><img src="assets/img/fb.png" class="img-fluid"  alt="test"></a> 
