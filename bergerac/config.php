@@ -6,17 +6,17 @@ define('HTTP_SERVER', 'http://otoit.cleverapps.io/bergerac/');
 define('HTTPS_SERVER', 'http://otoit.cleverapps.io/bergerac/');
 
 // DIR
-define('DIR_APPLICATION', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/catalog/');
-define('DIR_SYSTEM', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/system/');
-define('DIR_IMAGE', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/image/');
-define('DIR_LANGUAGE', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/catalog/language/');
-define('DIR_TEMPLATE', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/catalog/view/theme/');
-define('DIR_CONFIG', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/system/config/');
-define('DIR_CACHE', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/system/storage/cache/');
-define('DIR_DOWNLOAD', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/system/storage/download/');
-define('DIR_LOGS', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/system/storage/logs/');
-define('DIR_MODIFICATION', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/system/storage/modification/');
-define('DIR_UPLOAD', '/home/bas/app_c7940037-8d67-4790-b5d3-ed60df63befd/bergerac/system/storage/upload/');
+define('DIR_APPLICATION', '/home/bas/'.getenv(APP_ID).'/bergerac/catalog/');
+define('DIR_SYSTEM', '/home/bas/'.getenv(APP_ID).'/bergerac/system/');
+define('DIR_IMAGE', '/home/bas/'.getenv(APP_ID).'/bergerac/image/');
+define('DIR_LANGUAGE', '/home/bas/'.getenv(APP_ID).'/bergerac/catalog/language/');
+define('DIR_TEMPLATE', '/home/bas/'.getenv(APP_ID).'/bergerac/catalog/view/theme/');
+define('DIR_CONFIG', '/home/bas/'.getenv(APP_ID).'/bergerac/system/config/');
+define('DIR_CACHE', '/home/bas/'.getenv(APP_ID).'/bergerac/system/storage/cache/');
+define('DIR_DOWNLOAD', '/home/bas/'.getenv(APP_ID).'/bergerac/system/storage/download/');
+define('DIR_LOGS', '/home/bas/'.getenv(APP_ID).'/bergerac/system/storage/logs/');
+define('DIR_MODIFICATION', '/home/bas/'.getenv(APP_ID).'/bergerac/system/storage/modification/');
+define('DIR_UPLOAD', '/home/bas/'.getenv(APP_ID).'/bergerac/system/storage/upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
