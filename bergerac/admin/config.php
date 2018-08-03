@@ -10,7 +10,7 @@ define('HTTPS_CATALOG', 'http://otoit.cleverapps.io/bergerac/');
 // DIR
 define('DIR_APPLICATION', '/home/bas/'.getenv(APP_ID).'/bergerac/admin/');
 define('DIR_SYSTEM', '/home/bas/'.getenv(APP_ID).'/bergerac/system/');
-define('DIR_IMAGE', '/home/bas/'.getenv(APP_ID).'/html/bergerac/image/');
+define('DIR_IMAGE', '/home/bas/'.getenv(APP_ID).'/bergerac/image/');
 define('DIR_LANGUAGE', '/home/bas/'.getenv(APP_ID).'/bergerac/admin/language/');
 define('DIR_TEMPLATE', '/home/bas/'.getenv(APP_ID).'/bergerac/admin/view/template/');
 define('DIR_CONFIG', '/home/bas/'.getenv(APP_ID).'/bergerac/system/config/');
